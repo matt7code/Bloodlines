@@ -1,0 +1,19 @@
+# START
+# END
+# PAUSE <seconds> <STACK | "">
+# FADE <fade length in seconds> <fade percentage start> <fade percentage finish> <Fade color R> <Fade color G> <Fade color B>
+# FADE OFF
+# PLAY_SOUND <STAIRS | SLEEP>
+# STAIRS <UP|DOWN|(int)>
+# WAIT
+START
+MUSIC PAUSE
+PLAY_SOUND SLEEP
+FADE 4 0 1
+PAUSE 7.9 STACK
+HEAL ALL
+FADE 4 1 0
+PAUSE 3.9
+FADE OFF
+MUSIC PLAY 1
+END

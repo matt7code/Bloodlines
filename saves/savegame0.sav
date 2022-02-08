@@ -1,0 +1,147 @@
+[HEADER]
+# Date and Time of Save
+Wed  8:23:36
+# Time Running (ms) - Total Steps - Gold
+64498864 11238 21038
+[PARTY]
+# Current Location Name:
+The Countryside
+# Location:
+99798.3 64884.7 0
+# Party Size:
+7
+# [END]
+# [Party Member]
+0
+# Name
+Anna
+# Experience
+1217
+# Level Class Facing Avatar
+2 3 1 10
+# Current Health and Magic
+12 12
+# Spells
+300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 
+# Inventory
+0 0
+# Equipped
+24 0 37 54 54 0 0 38 0 35 
+# [END]
+# [Party Member]
+1
+# Name
+Elsa
+# Experience
+1304
+# Level Class Facing Avatar
+2 3 1 17
+# Current Health and Magic
+12 12
+# Spells
+300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 
+# Inventory
+67 36 66 24 65 1 2 2 42 2 
+# Equipped
+0 0 0 42 42 0 0 0 0 0 
+# [END]
+# [Party Member]
+2
+# Name
+Fimora
+# Experience
+873
+# Level Class Facing Avatar
+2 3 1 33
+# Current Health and Magic
+12 15
+# Spells
+300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 
+# Inventory
+48 3 2 1 4 1 
+# Equipped
+0 0 0 48 48 0 0 0 0 0 
+# [END]
+# [Party Member]
+3
+# Name
+Jedesiceceho
+# Experience
+976
+# Level Class Facing Avatar
+2 3 1 23
+# Current Health and Magic
+12 15
+# Spells
+300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 
+# Inventory
+2 2 1 1 8 2 
+# Equipped
+0 0 0 0 0 0 0 0 0 0 
+# [END]
+# [Party Member]
+4
+# Name
+Doc
+# Experience
+1262
+# Level Class Facing Avatar
+2 4 1 24
+# Current Health and Magic
+12 18
+# Spells
+400 401 402 403 404 405 406 407 408 409 410 411 412 413 414 415 
+# Inventory
+2 1 
+# Equipped
+0 0 0 0 0 0 0 0 0 0 
+# [END]
+# [Party Member]
+5
+# Name
+Mama
+# Experience
+832
+# Level Class Facing Avatar
+2 4 1 1
+# Current Health and Magic
+12 24
+# Spells
+400 401 402 403 404 405 406 407 408 409 410 411 412 413 414 415 
+# Inventory
+2 1 
+# Equipped
+0 0 0 0 0 0 0 0 0 0 
+# [END]
+# [Party Member]
+6
+# Name
+Kate
+# Experience
+1268
+# Level Class Facing Avatar
+2 4 1 3
+# Current Health and Magic
+12 24
+# Spells
+400 401 402 403 404 405 406 407 408 409 410 411 412 413 414 415 
+# Inventory
+2 1 
+# Equipped
+0 0 0 0 0 0 0 0 0 0 
+# [END]
+[CHESTS]
+102227 
+[END]
+[SAVED_VALUES]
+ARMOROK==2
+Ale==Wouldn't_buy
+CHIMERA==2
+CLUCK==2
+CRABBY==5
+DINOBITE==2
+LIONARK==4
+NIGHTMARE==4
+SKIZZLER==6
+TENTAGREL==2
+[END]

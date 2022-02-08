@@ -1,0 +1,36 @@
+START
+
+        # What the actor will be doing.
+        SELECT ACTOR
+        ANIMATE SET_NAME cast_from_middle
+        ANIMATE SET_STYLE END
+
+
+        # Lightning bolt 1
+        PROP 22 LOAD 10
+        SPRITE PLACE 1760 450
+        SPRITE SCALE 5.0 5.0
+        SPRITE ROTATE 270
+        ANIMATE SET_NAME fly_forward
+        ANIMATE SET_STYLE END
+
+        # Lightning bolt 2
+        PROP 23 LOAD 11
+        SPRITE PLACE 1560 500
+        SPRITE SCALE 6.0 6.0
+        SPRITE ROTATE 270
+        ANIMATE SET_NAME fly_forward
+        ANIMATE SET_STYLE END
+
+        # Lightning bolt 3
+        PROP 24 LOAD 12
+        SPRITE PLACE 1860 550
+        SPRITE SCALE 5.0 5.0
+        SPRITE ROTATE 270
+        ANIMATE SET_NAME fly_forward
+        ANIMATE SET_STYLE END
+
+        ANIMATE START ALL
+        WAIT ANIM
+
+END

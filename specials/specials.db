@@ -1,0 +1,70 @@
+# combat cutscene script list
+attack_melee_basic_player
+attack_melee_basic_monster
+high_chop
+
+UseGenericItem
+UsePotion
+UseWand
+UseScroll
+Stance
+Guard
+Flee
+
+None
+
+
+# spells:
+spell_none
+
+# warrior
+#spell_heroism
+#spell_brace
+#spell_focus
+#spell_challenge
+#spell_bash
+
+# rogue
+#spell_examine
+#spell_expose_weakness
+#spell_peek
+#spell_snare
+#spell_sneak
+#spell_steal
+
+# wizard
+#spell_missile
+spell_lightning_bolt
+spell_burn
+#spell_fireball
+#spell_gush_water
+#spell_slow
+#spell_hasten
+#spell_earthquake
+#spell_fire_storm
+#spell_lighting_storm
+#spell_snow_storm
+#spell_flood
+#spell_petrify
+#spell_volcano
+#spell_asteroid
+
+# cleric
+#spell_heal
+#spell_bless
+#spell_curse
+#spell_sick
+#spell_blind
+#spell_cure
+#spell_restore
+#spell_removecurse
+#spell_regen
+#spell_poison
+#spell_resurrect
+#spell_bless_all
+#spell_heal_all
+#spell_regen_all
+#spell_res_all
+#spell_restore_all
+
+# the end

@@ -1,0 +1,89 @@
+1.) Open specials/specials.db
+    a.) Add the special script name to this list (or uncomment it) eg. spell_burn
+
+2.) Create a new script or edit the existing script matching the above name in /specials
+    a.) Write that script using the below commands:
+
+        # Reminder: Enemy is ID# 0-14
+        # Reminder: Party is ID# 15-21
+        # Examples:
+
+        START
+        END
+
+        PROP 22 LOAD 0
+        PROP 22 ADD_FRAMES 1 2 3 4 5 6 7 8 9
+        PROP 22 SET_STYLE OSCILLATE
+        PROP 22 SET_FRAME 0
+        PROP 22 SET_FRAMETIME 0.0333333
+        PROP 22 UNLOAD
+
+        SELECT ACTOR
+        SELECT TARGET
+        SELECT 16
+
+        (First SELECT the active prop.)
+        ANIMATE START
+        ANIMATE START ALL
+        ANIMATE STOP
+        ANIMATE STOP ALL
+        ANIMATE SET_INDEX 0
+        ANIMATE SET_NAME UpDown
+        ANIMATE SET_STYLE END
+        ANIMATE SET_STYLE LOOP
+        ANIMATE SET_STYLE OSCILLATE
+        ANIMATE SET_STYLE OSCILLATE FORWARD
+        ANIMATE SET_STYLE OSCILLATE BACK
+
+        SPRITE MOVE 7 -7
+        SPRITE PLACE 300 450
+        SPRITE SHOW
+        SPRITE HIDE
+        SPRITE SCALE x y
+        SPRITE RECOLOR r g b a
+        SPRITE ROTATE <relative angle>
+        SPRITE ROTATION <angle to set rotation to>
+        SPRITE RECTANGLE <left top width height>
+
+        WAIT 1.0f
+        WAIT ANIM
+
+        eg.
+        This loads the initial sprite from graphics/spells.png, a prop without a sprite makes no sense.
+        It uses a 'prop index' of 22, which is the first available prop index after the last party member slot.
+        PROP 22 LOAD 0
+        If the prop is animated, add other sprites to the prop. All sprites in the spells.png are 32x32, and
+        counted from 0 to (spells.png.getsize(x)/32)*(spells.png.getsize(y)/32). The cells are counted from left to right,
+        then top to bottom.
+        PROP 22 ADD_FRAMES 1 2 3 4 5 6 7 8 9
+        Add as many props as you'd like counting up from 22.
+        If the prop itself is animated, set it's animation style.
+        PROP 22 SET_STYLE END
+        If you need to select a prop other than the most recently loaded, do so like this:
+        PROP SELECT 22
+        Manipulate the props animation.
+        ANIMATE SET_NAME fly_forward
+        Set the animations behavior, will it loop, oscillate forward or back, or simply end?
+        ANIMATE SET_STYLE END
+        Tell the script to start all the animations you've queued.
+        ANIMATE START ALL
+        Finally set how long the script should be allowed to last with the WAIT command. You can express this durations in seconds,
+        eg. 5 seconds would be "WAIT 5.0" or instruct it to wait until all the animations have concluded with WAIT ANIM. If none
+        of the animations has style END, the cut scene will expire after 3.0 seconds.
+        WAIT ANIM
+
+        That's it for a basic animation.
+
+        Advanced Commands:
+        SPRITE PLACE X Y    By default, all props are placed at 960x, 540y to begin with. Here, you can change this setting.
+        SPRITE MOVE X Y     This command allows you to move a prop relative to it current position.
+
+    b.) Save the script
+
+3.) Open "combat_cutscene.cpp"
+    a.) Navigate to the "Combat_Cutscene::LoadScript()" function.
+    b.) Find the spell constant in the switch statement corresponding to the special you wish to add.
+    c.) Under the CASE for your spell, add your spell script from step #1, eg.: m_scriptName = "spell_burn";
+    d.) Save the file and re-compile.
+
+4.) All done!

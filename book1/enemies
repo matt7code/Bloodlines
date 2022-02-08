@@ -1,0 +1,23 @@
+# TAG (Tags can't have spaces) NAME NAME NAME ...
+# int ID, int Avatar/Picture, int Level, float BonusHitpoints, float BonusExperience, float bonusGold
+#           int R, int G, int B, int A, float ScaleX, float ScaleY,
+# (Bonuses) float m_atkPhys, float m_atkMagi, float m_atkHeat, float m_atkCold, float m_atkElec, float m_atkAcid,
+# (Bonuses) float m_defPhys, float m_defMagi, float m_defHeat, float m_defCold, float m_defElec, float m_defAcid
+# Offensive Spells (#, #, #)
+# Defensive Spells (#, #, #)
+DRAGON_SERPENT_RED A Red Dracolisk  :  0 12 1   0.0   0.0   0.0   255 255 255 255   3.0   3.0 : 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 : 1 2 : 4 5
+DINOBITE Dinobite                   :  1  0 1   0.0   0.0   0.0   255 255 255 255   1.0   1.0 : 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 ::
+CHIMERA Chimera                     :  2  1 1   0.0   0.0   0.0   255 255 255 255   1.0   1.0 : 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 ::
+HOPPER Hopper                       :  3  2 1   0.0   0.0   0.0   255 255 255 255   1.0   1.0 : 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 ::
+ARMOROK Armorok                     :  4  3 1   0.0   0.0   0.0   255 255 255 255   1.0   1.0 : 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 ::
+NIGHTMARE Nightmare                 :  5  4 1   0.0   0.0   0.0   255 255 255 255   1.0   1.0 : 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 ::
+LIONARK Lionark                     :  6  5 1   0.0   0.0   0.0   255 255 255 255   1.0   1.0 : 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 ::
+SKIZZLER Skizzler                   :  7  6 1   0.0   0.0   0.0   255 255 255 255   1.0   1.0 : 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 ::
+CLUCK Cluck                         :  8  7 1   0.0   0.0   0.0   255 255 255 255   1.0   1.0 : 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 ::
+DEMOG Demog                         :  9  8 1   0.0   0.0   0.0   255 255 255 255   1.0   1.0 : 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 ::
+SMASHTAIL Smashtail                 : 10  9 1   0.0   0.0   0.0   255 255 255 255   1.0   1.0 : 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 ::
+CRABBY Crabby                       : 11 10 1   0.0   0.0   0.0   255 255 255 255   1.0   1.0 : 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 ::
+TENTAGREL Tentagrel                 : 12 11 1   0.0   0.0   0.0   255 255 255 255   1.0   1.0 : 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 ::
+EVILPRIEST Moshe Eichenbaum         : 13 13 5   0.0   0.0   0.0   255 255 255 255   2.0   2.0 : 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 ::
+END_OF_LIST Tiny Destroyer          : 99  1 1   0.0   0.0   0.0   255 255 255 255  0.25  0.25 : 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 ::
+#THE END

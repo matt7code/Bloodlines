@@ -1,0 +1,147 @@
+[HEADER]
+# Date and Time of Save
+Sun  7:18:56
+# Time Running (ms) - Total Steps - Gold
+63705562 10714 17250
+[PARTY]
+# Current Location Name:
+The Countryside
+# Location:
+101533 63873.9 0
+# Party Size:
+7
+# [END]
+# [Party Member]
+0
+# Name
+Anna
+# Experience
+1193
+# Level Class Facing Avatar
+2 1 3 10
+# Current Health and Magic
+24 6
+# Spells
+100 101 102 103 104 
+# Inventory
+0 0
+# Equipped
+24 0 0 54 54 0 0 0 0 0 
+# [END]
+# [Party Member]
+1
+# Name
+Elsa
+# Experience
+1280
+# Level Class Facing Avatar
+2 1 3 17
+# Current Health and Magic
+24 6
+# Spells
+100 101 102 103 104 
+# Inventory
+67 36 66 24 65 1 2 2 42 2 
+# Equipped
+0 0 0 42 42 0 0 0 0 0 
+# [END]
+# [Party Member]
+2
+# Name
+Kate
+# Experience
+1244
+# Level Class Facing Avatar
+2 1 3 3
+# Current Health and Magic
+24 6
+# Spells
+100 101 102 103 104 
+# Inventory
+2 1 
+# Equipped
+0 0 0 0 0 0 0 0 0 0 
+# [END]
+# [Party Member]
+3
+# Name
+Mama
+# Experience
+808
+# Level Class Facing Avatar
+2 4 3 1
+# Current Health and Magic
+6 24
+# Spells
+400 401 402 403 404 405 406 407 408 409 410 411 412 413 414 415 
+# Inventory
+2 1 
+# Equipped
+0 0 0 0 0 0 0 0 0 0 
+# [END]
+# [Party Member]
+4
+# Name
+Doc
+# Experience
+1238
+# Level Class Facing Avatar
+2 4 3 24
+# Current Health and Magic
+6 24
+# Spells
+400 401 402 403 404 405 406 407 408 409 410 411 412 413 414 415 
+# Inventory
+2 1 
+# Equipped
+0 0 0 0 0 0 0 0 0 0 
+# [END]
+# [Party Member]
+5
+# Name
+Jedesiceceho
+# Experience
+952
+# Level Class Facing Avatar
+2 3 3 23
+# Current Health and Magic
+6 24
+# Spells
+300 301 302 303 304 305 306 307 308 
+# Inventory
+2 2 1 1 8 2 
+# Equipped
+0 0 0 0 0 0 0 0 0 0 
+# [END]
+# [Party Member]
+6
+# Name
+Fimora
+# Experience
+849
+# Level Class Facing Avatar
+2 3 3 33
+# Current Health and Magic
+6 24
+# Spells
+300 301 302 303 304 305 306 307 308 
+# Inventory
+48 3 2 1 4 1 
+# Equipped
+0 0 0 48 48 0 0 0 0 0 
+# [END]
+[CHESTS]
+102227 
+[END]
+[QUEST_VALUES]
+CHIMERA==1
+CLUCK==1
+DEMOG==1
+DRAGON_SERPENT_RED==1
+EVILPRIEST==6
+LIONARK==3
+NIGHTMARE==1
+SKIZZLER==2
+Seen_Intro==True
+
+[END]

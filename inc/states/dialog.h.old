@@ -1,0 +1,102 @@
+#ifndef Dialog_H
+#define Dialog_H
+
+#include <SFML/Graphics.hpp>
+#include "gamestate.h"
+#include "boxes.h"
+#include "tool.h"
+#include "npc.h"
+#include "hero.h"
+
+#include <iostream>
+#include <map>
+#include <fstream>
+#include <string>
+#include <vector>
+#include <sstream>
+
+class Dialog : public CGameState
+{
+public:
+    void    Init           (CGameEngine* eng);
+    void    Cleanup        (CGameEngine* e);
+    void    Pause          (CGameEngine* e) {}
+    void    Resume         (CGameEngine* e) {}
+    void    HandleEvents   (CGameEngine* e);
+    void    Update         (CGameEngine* e);
+    void    Draw           (CGameEngine* e);
+    static  Dialog* Instance() { return &m_Dialog; }
+
+protected:
+            Dialog() {}
+
+private:
+    enum {DIALOG_NONE, DIALOG_READING, DIALOG_CHOICE};
+    using               vecStr = std::vector<std::string>;
+    static              Dialog m_Dialog;
+    const int           BOX_CONVO_WIDTH   = 1400;
+    const int           BOX_CONVO_HEIGHT  = 204;
+    const int           BOX_CONVO_TOP     = 801;
+    const int           BOX_CONVO_LEFT    = 260;
+    const int           FACE_TOP          = 807;
+    const int           LOOP_LIMIT        = 1000;
+    const int           ANNOY_THRESHHOLD  = 15;
+
+    void                ProcessDialogs();
+    void                ClearDialog();
+    void                Start();
+    bool                ProcessLine();
+
+    void                doCondition(vecStr line);
+    void                doChoice(vecStr line);
+    void                doConsequence(vecStr line);
+    void                doGoto(vecStr line);
+
+    std::string         reconstituteString(const vecStr& vec);
+    std::string         peekNextCommand();
+    std::string         peekPrevCommand();
+    std::string         peekCurrCommand();
+    std::string         Trim(const std::string& str, const std::string& whitespace);
+    vecStr              Tokenize(std::string str);
+
+    void                PrintStats();
+    void                DebugLine(int cl = -1);
+
+    int                 getCurrentLine();
+    int                 setCurrentLine(int n);
+    int                 advanceCurrentLine(int n = 1);
+
+    void                RewindConvo();
+    void                AdvanceConvo();
+    void                DisplayCurrentBlock();
+
+    Boxes               m_Boxes;
+    sf::View            m_View;
+    CGameEngine*        e;
+
+    int                 cl                      = 0; /**< Current Internal Dialog Line */
+    int                 totalLines              = 0;
+    int                 goto_limit              = 0;
+    int                 choice_number           = 0;
+    int                 choiceline_placeholder  = 0;
+    int                 cdl                     = 0; /**< Current Display Line */
+    std::string         DialogTitle;
+
+    vecStr                      displayBlock;
+    std::map<int, vecStr>       dialog;
+    std::map<int, vecStr>       consequence;
+    std::map<std::string, int>  bookmarks;
+    vecStr                      SayAnnoy;
+    vecStr                      SayRandom;
+    vecStr*                     dialogMapPtr;
+    Npc*                        NpcPtr;
+    Hero*                       HeroPtr;
+    int                         Gold;
+    int                         m_currAnnoyLine = 0;
+    sf::Sprite                  m_face;
+    bool                        m_usingFace = false;
+    bool                        m_paused = false;
+    bool                        m_talking = true;
+};
+
+#endif

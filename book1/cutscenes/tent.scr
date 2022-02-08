@@ -1,0 +1,30 @@
+# START
+# END
+# PAUSE <seconds> <STACK | "">
+# FADE <fade length in seconds> <fade percentage start> <fade percentage finish> <Fade color R> <Fade color G> <Fade color B>
+# FADE OFF
+# PLAY_SOUND <STAIRS | SLEEP>
+# STAIRS <UP|DOWN|(int)>
+# WAIT
+START
+MUSIC PAUSE
+
+PLAY_SOUND SLEEP
+SHOW_PARTY FALSE
+
+IMAGE graphics/tent.png 928 508
+
+FADE 4 0 1
+PAUSE 7.8
+
+HEAL ALL
+FADE 4 1 0
+PAUSE 5.9
+FADE OFF
+
+NOTICE The party is refreshed.
+SHOW_PARTY TRUE
+IMAGE CLEAR
+MUSIC PLAY 1
+SET_RETURN_STRING Exit_Inventory
+END

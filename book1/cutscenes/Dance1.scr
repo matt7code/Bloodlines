@@ -1,0 +1,11 @@
+START
+CAM_FOLLOW
+CALL Dance-square1
+CALL Dance-square1
+CALL Dance-square4
+CALL Dance-square4
+CALL Dance-square3
+CALL Dance-square3
+CALL Dance-square2
+CALL Dance-square2
+END

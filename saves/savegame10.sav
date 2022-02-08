@@ -1,0 +1,113 @@
+[HEADER]
+# Date and Time of Save
+Mon 12:46:14
+# Time Running (ms) - Total Steps - Gold
+22110403 7803 621987
+[PARTY]
+# Current Location Name:
+The Countryside
+# Location:
+101529 63873.9 0
+# Party Size:
+4
+# [END]
+# [Party Member]
+0
+# Name
+Matt
+# Experience
+976
+# Level Class Facing Avatar
+2 1 3 16
+# Current Health and Magic
+24 6
+# Spells
+100 
+# Inventory
+0 0
+# Equipped
+36 68 37 60 60 0 0 38 0 39 
+# [END]
+# [Party Member]
+1
+# Name
+Kitty
+# Experience
+68
+# Level Class Facing Avatar
+2 1 3 31
+# Current Health and Magic
+24 6
+# Spells
+100 
+# Inventory
+0 0
+# Equipped
+0 0 0 0 0 0 0 0 0 0 
+# [END]
+# [Party Member]
+2
+# Name
+Elsa
+# Experience
+68
+# Level Class Facing Avatar
+2 1 3 3
+# Current Health and Magic
+24 6
+# Spells
+100 
+# Inventory
+0 0
+# Equipped
+0 0 0 0 0 0 0 0 0 0 
+# [END]
+# [Party Member]
+3
+# Name
+I love you!
+# Experience
+100
+# Level Class Facing Avatar
+2 1 3 18
+# Current Health and Magic
+24 6
+# Spells
+100 
+# Inventory
+0 0
+# Equipped
+0 0 0 0 0 0 0 0 0 0 
+# [END]
+[CHESTS]
+102227 
+[END]
+[SAVED_VALUES]
+ARMOROK==9
+CHIMERA==12
+CLUCK==7
+CRABBY==9
+DEMOG==16
+DINOBITE==12
+DRAGON_SERPENT_RED==1
+EVILPRIEST==6
+HOPPER==8
+LIONARK==12
+NIGHTMARE==16
+SKIZZLER==13
+SMASHTAIL==7
+Seen_Intro==True
+TENTAGREL==13
+UnknownTag==2
+act_1_main_quest==has_crypt_key
+[END]
+[QUESTS]
+# Quest Format: Tag==Part/Display/Completed/Name:Description
+APPLE1==111Apple Man:Find an apple.
+APPLE2==201Apple Man:Eat an apple.
+APPLE3==301Apple Man:You found and ate an apple.
+CRYPT4==111Trouble in the Crypt:There's something odd going on in the Woodhome town Crypt.
+ZOMBIE_KILLER5==111Zombie Killer:Kill 10 zombies in the barrack's basement and report to Sheriff Roberts.
+CRYPT6==101Trouble in the Crypt:There's something odd going on in the Woodhome town Crypt.
+ZOMBIE_KILLER7==601Zombie Killer:You killed 10 zombies in the barrack's basement and Sheriff Roberts was very grateful.
+[END]

@@ -1,0 +1,572 @@
+#include "states/dialog.h"
+
+Dialog Dialog::m_Dialog;
+
+void Dialog::Init(CGameEngine* eng)
+{
+    e = eng; /* Sorta new technique, duplicate the engine pointer locally. */
+    m_Boxes.getBoxes().clear();
+    m_Boxes.addBox("Convo", sf::Vector2f(BOX_CONVO_WIDTH, BOX_CONVO_HEIGHT), sf::Vector2f(BOX_CONVO_LEFT, BOX_CONVO_TOP), Box::BOX_CONVO);
+
+    NpcPtr  = e->m_conversationTarget;
+    HeroPtr = &e->getParty().getMember(0);
+    Gold    = e->getParty().getPartyGold();
+
+    m_pcFace = &e->m_Level.getFaceByAvatar(HeroPtr->getAvatar());
+    if(e->m_Level.getFaceIndexByAvatar(NpcPtr->avatar) != -1) m_npcFace = &e->m_Level.getFaceByAvatar(NpcPtr->avatar);
+    else m_npcFace = m_pcFace;
+
+    setCurrentLine(0);
+    setPreviousLine(-1);
+    m_mode = DIALOG_MODE_READ;
+    ProcessDialog();
+}
+
+void Dialog::ProcessLine()
+{
+    //LOG("PROCESSING");
+    auto it = dialog.find(getCurrentLine());
+    if (it == dialog.end()) return; // The line isn't found.
+
+    std::vector<std::string> line = it->second;
+    std::string command = line[0];
+    line.erase(line.begin());
+    //std::cout << "Command: " << command << std::endl;
+
+    if(e->getAnnoyed() >= ANNOY_THRESHHOLD && !SayAnnoy.empty()) // the 16th time you chat
+    {
+        m_currAnnoyLine = e->getAnnoyed() - ANNOY_THRESHHOLD;
+        m_currAnnoyLine %= SayAnnoy.size();
+        displayBlock.clear();
+        Tool::FormatLineIntoVector(SayAnnoy[m_currAnnoyLine], 55, displayBlock);
+        DisplayCurrentBlock();
+        advanceCurrentLine();
+    }
+    else if (command == "CONDITION") // Read the control statement and switch.
+    {
+        doCondition(line);
+    }
+    else if (command == "CHOICE")
+    {
+        doChoice(line);
+    }
+    else if (command == "CONSEQUENCE")
+    {
+        doConsequence(line);
+        advanceCurrentLine();
+    }
+    else if (command == "GOTO")
+    {
+        doGoto(line[0]);
+    }
+    else if (command == "PAUSE")
+    {
+    }
+    else if (command == "PUT")
+    {
+        LOG("PUT");
+        m_currFace = m_npcFace;
+        std::string output = reconstituteString(line);
+        Tool::FormatLineIntoVector(output, 55, displayBlock);
+        //std::cout << "Debug: C/P/O: " << getCurrentLine() << "/" << getPreviousLine() << ": " << output << std::endl;
+        if(peekNextCommand() != "PUT") DisplayCurrentBlock();
+        advanceCurrentLine();
+    }
+    else if (command == "SAY")
+    {
+        m_currFace = m_pcFace;
+        std::string output = reconstituteString(line);
+        Tool::FormatLineIntoVector(output, 55, displayBlock);
+        if(peekNextCommand() != "SAY") DisplayCurrentBlock();
+        advanceCurrentLine();
+    }
+    else if (command == "RAND")
+    {
+        if(peekPrevCommand() != "RAND") SayRandom.clear();
+
+        std::string output = reconstituteString(line);
+        SayRandom.push_back(output);
+
+        if(peekNextCommand() != "RAND")
+        {
+            m_currFace = m_npcFace;
+            output = SayRandom.at(Tool::getRand(0, SayRandom.size() - 1));
+            Tool::FormatLineIntoVector(output, 55, displayBlock);
+            DisplayCurrentBlock();
+        }
+        advanceCurrentLine();
+    }
+    else if (command == "END")
+    {
+        e->PopState();
+    }
+    else if (command == "STATS")
+    {
+        PrintStats();
+        advanceCurrentLine();
+    }
+    else
+    {
+        std::cerr << "CRITICAL ERROR: Bad Command in Dialog \"" << NpcPtr->tag << "\"." << std::endl;
+        std::cerr << "NPC Name: " << NpcPtr->name << std::endl;
+        std::cerr << " Command: " << command << std::endl;
+        std::cerr << "      CL: " << getCurrentLine() << std::endl;
+    }
+}
+
+void Dialog::Cleanup(CGameEngine* e)
+{
+    e->getParty().Unfreeze(e->getTimeRunning().getElapsedTime());
+    e->m_conversationTarget->facing             = e->m_prevFacing;
+    e->m_conversationTarget->moveMode           = e->m_prevMoveMode;
+    e->m_conversationTarget->UpdateAppearance();
+    e->m_conversationTarget                     = nullptr;
+    e->getParty().setPartyGold(Gold);
+    ClearDialog();
+}
+
+void Dialog::HandleEvents(CGameEngine* e)
+{
+    sf::Event event;
+    while (e->m_RenderWindow.pollEvent(event))
+    {
+        if (event.type == sf::Event::Closed) e->Quit();
+        if (event.type == sf::Event::KeyPressed)
+        {
+            switch(event.key.code)
+            {
+            case sf::Keyboard::Escape:
+                e->PopState();
+                break;
+
+            case sf::Keyboard::Return:
+            case sf::Keyboard::Space:
+                if(m_mode == DIALOG_MODE_READ)
+                {
+                    displayBlock.clear();
+                    cdl = 0;
+                    advanceCurrentLine();
+                }
+                else if (m_mode == DIALOG_MODE_CHOICE)
+                {
+                    ConfirmChoice();
+                    displayBlock.clear();
+                    cdl = 0;
+                    advanceCurrentLine();
+                }
+                break;
+
+            case sf::Keyboard::W:
+            case sf::Keyboard::Up:
+                if(m_mode == DIALOG_MODE_READ) RewindConvo();
+                else if (m_mode == DIALOG_MODE_CHOICE) PrevChoice();
+                DisplayCurrentBlock();
+                break;
+
+            case sf::Keyboard::S:
+            case sf::Keyboard::Down:
+                if(m_mode == DIALOG_MODE_READ) AdvanceConvo();
+                else if (m_mode == DIALOG_MODE_CHOICE) NextChoice();
+                DisplayCurrentBlock();
+                break;
+
+            default:
+                break;
+            }
+        }
+    }
+}
+
+void Dialog::Update(CGameEngine* e)
+{
+    e->m_View.setCenter(e->getParty().getPos());
+    e->m_Level.Update(e->getTimeRunning(), e->getParty().getPos(), e->viewExtents, e->getParty().getFrozen());
+
+    while(getCurrentLine() != getPreviousLine())
+    {
+        setPreviousLine(getCurrentLine());
+        ProcessLine();
+    }
+}
+
+void Dialog::Draw(CGameEngine* e)
+{
+    e->m_RenderWindow.setView(e->m_View);
+    e->m_Level.Draw(e->m_RenderWindow);
+    e->getParty().Draw(e->m_RenderWindow);
+    e->m_RenderWindow.setView(e->m_ViewBase);
+    m_Boxes.DrawBoxes(e->m_RenderWindow);
+
+    e->m_RenderWindow.draw(*m_currFace);
+
+    if(m_mode == DIALOG_MODE_READ)
+    {
+        if(displayBlock.size() > 4) /// We'll need a 'there's more text above/below' arrow.
+        {
+            if (cdl > 0) m_Boxes.drawArrow(sf::Vector2f(1920 / 2, 800), 1, sf::Vector2f(1.0, 3.0), e->m_RenderWindow, true);
+            if (cdl + 4 < (int)displayBlock.size()) m_Boxes.drawArrow(sf::Vector2f(1920 / 2, 1000), 3, sf::Vector2f(1.0, 3.0), e->m_RenderWindow, true);
+        }
+    }
+    else if (m_mode == DIALOG_MODE_CHOICE)
+    {
+        if(choiceBlock.size() > 4) /// We'll need a 'there's more text above/below' arrow.
+        {
+            if (cdl > 0) m_Boxes.drawArrow(sf::Vector2f(1920 / 2, 800), 1, sf::Vector2f(1.0, 3.0), e->m_RenderWindow, true);
+            if (cdl + 4 < (int)choiceBlock.size()) m_Boxes.drawArrow(sf::Vector2f(1920 / 2, 1000), 3, sf::Vector2f(1.0, 3.0), e->m_RenderWindow, true);
+        }
+        // Draw Choice Arrow
+        m_Boxes.drawArrow(sf::Vector2f(500, 838 + (40 * m_choice)), 2, sf::Vector2f(1.0, 1.0), e->m_RenderWindow, true);
+    }
+}
+
+void Dialog::doGoto(std::string dest)
+{
+    if (dest == "START")
+    {
+        setCurrentLine(0);
+    }
+    else if (dest == "END")
+    {
+        setCurrentLine(dialog.size() - 1);
+    }
+    else
+    {
+        int targetLine;
+        std::stringstream ss;
+        ss << dest;
+        ss >> targetLine;
+        if(ss.fail())
+        {
+            ss.clear();
+
+            auto it = bookmarks.find(dest);
+            if (it == bookmarks.end())
+            {
+                std::cerr << "Error Invalid Bookmark: " << dest << std::endl;
+            }
+            else
+            {
+                setCurrentLine(it->second);
+            }
+        }
+        else
+        {
+            setCurrentLine(targetLine);
+        }
+    }
+}
+
+void Dialog::doCondition(std::vector<std::string> line)
+{
+    std::string command = line[0];
+
+    bool pass = true;
+
+    if (command == "TRUE") pass = true;
+    else if (command == "FALSE") pass = false;
+    else if (command == "HAS_GREATER_THAN_ITEM_AMOUNT")
+    {
+        std::stringstream ss;
+        int item, amount;
+        ss << line[1] << " " << line[2];
+        ss >> item >> amount;
+        //pass = (NpcPtr->.find(item)->second[0] > amount);
+    }
+    else if (command == "HAS_LESS_THAN_ITEM_AMOUNT")
+    {
+        std::stringstream ss;
+        int item, amount;
+        ss << line[1] << " " << line[2];
+        ss >> item >> amount;
+        pass = HeroPtr->getInventoryAmount(item) < amount;
+        //pass = (Inventory.find(item)->second[0] < amount);
+    }
+
+    advanceCurrentLine();
+
+    if (!pass)
+    {
+        /// Choice + Consequences get skipped if they depended on the CONDITIONAL
+        if (peekCurrCommand() == "CHOICE")
+        {
+            advanceCurrentLine();
+            while (peekCurrCommand() == "CONSEQUENCE") advanceCurrentLine();
+        }
+        else
+        {
+            /// In a basic failure, only the next line is skipped.
+            advanceCurrentLine();
+        }
+    }
+}
+
+void Dialog::doChoice(std::vector<std::string> line)
+{
+    if (line[0] == "START")
+    {
+        choice_start = getCurrentLine();
+        choiceBlock.clear();
+        advanceCurrentLine();
+    }
+    else if (line[0] == "END")
+    {
+        m_mode = DIALOG_MODE_CHOICE;
+        DisplayCurrentBlock();
+    }
+    else
+    {
+        choiceBlock.push_back(reconstituteString(line));
+        advanceCurrentLine();
+    }
+}
+
+void Dialog::doConsequence(std::vector<std::string> line)
+{
+    ConsequenceMap[choiceBlock.size()].push_back(reconstituteString(line));
+}
+
+std::string Dialog::reconstituteString(const std::vector<std::string>& vec)
+{
+    if(vec.empty()) return "Error: Empty vector fed to Dialog::reconstituteString";
+    std::string ret;
+    for (const auto &word : vec)
+    {
+        ret += word;
+        ret.push_back(' ');
+    }
+    ret.pop_back();
+    return ret;
+}
+
+void Dialog::PrintStats()
+{
+    std::clog << "-[ Dialog Stats: ]----------------------------------" << std::endl;
+    std::clog << "Current Dialog Tag: " << NpcPtr->tag << std::endl;
+    for (auto& x : dialog)
+        std::clog << x.first << ": " << reconstituteString(x.second) << std::endl;
+    std::clog << "Total lines: " << dialog.size() << std::endl;
+    std::clog << "-[ Consequence Map ] -------------------------------" << std::endl;
+    for(auto it = ConsequenceMap.begin(); it != ConsequenceMap.end(); ++it)
+    {
+        std::clog << "#" << it->first <<  it->second    
+    }
+    std::clog << "----------------------------------------------------" << std::endl;
+}
+
+void Dialog::ProcessDialog()
+{
+    //dialogMapPtr = &e->m_Level.getDialog(NpcPtr->tag);
+
+    //int totalLines = 0;
+    std::string input;
+    for (const auto& in : e->m_Level.getDialog(NpcPtr->tag))
+    {
+        input = Trim(in);
+
+        if (input.empty() || (input[0] == '#')) continue;
+
+        if (input[0] == '!')
+        {
+            input.erase(input.begin());
+            bookmarks[input] = dialog.size() - 1;
+        }
+        else
+        {
+            dialog[dialog.size()] = Tokenize(input);
+        }
+    }
+    std::clog << "Dialog Lines Processed: " << dialog.size() << std::endl;
+}
+
+void Dialog::ClearDialog()
+{
+    cdl                     = 0;
+    m_currAnnoyLine         = 0;
+
+    SayAnnoy.clear();
+    SayRandom.clear();
+    dialog.clear();
+    displayBlock.clear();
+}
+
+void Dialog::DebugLine(int cl)
+{
+    auto it = dialog.begin();
+    if (cl != -1) it = dialog.find(cl);
+    else it = dialog.find(getCurrentLine());
+    if (it == dialog.end()) std::cerr << "Debug Failure in Display Current Line." << std::endl;
+    for (const auto& w : it->second) std::cout << w << " ";
+    std::cout << std::endl;
+}
+
+std::string Dialog::Trim(const std::string& str, const std::string& whitespace)
+{
+    const auto strBegin = str.find_first_not_of(whitespace);
+    if (strBegin == std::string::npos)
+        return ""; // no content
+
+    const auto strEnd = str.find_last_not_of(whitespace);
+    const auto strRange = strEnd - strBegin + 1;
+
+    return str.substr(strBegin, strRange);
+}
+
+std::vector<std::string> Dialog::Tokenize(std::string str)
+{
+    std::string tmp;
+    std::vector<std::string> vec;
+    for (const auto& c : str)
+    {
+        if (c != ' ')
+        {
+            tmp.push_back(c);
+        }
+        else
+        {
+            vec.push_back(tmp);
+            tmp.clear();
+        }
+    }
+    vec.push_back(tmp);
+    return vec;
+}
+
+std::string Dialog::peekCurrCommand()
+{
+    auto it = dialog.find(getCurrentLine());
+    if (it == dialog.end()) return "NOT_FOUND";
+    return it->second[0];
+}
+
+std::string Dialog::peekNextCommand()
+{
+    auto it = dialog.find(getCurrentLine() + 1);
+    if (it == dialog.end()) return "NOT_FOUND";
+    return it->second[0];
+}
+
+std::string Dialog::peekPrevCommand()
+{
+    auto it = dialog.find(getCurrentLine() - 1);
+    if (it == dialog.end()) return "NOT_FOUND";
+    return it->second[0];
+}
+
+void Dialog::RewindConvo()
+{
+    if (cdl > 0) --cdl;
+}
+
+void Dialog::AdvanceConvo()
+{
+    if(m_mode == DIALOG_MODE_READ)
+        if (cdl < (int)displayBlock.size() - 4) ++cdl;
+    if(m_mode == DIALOG_MODE_CHOICE)
+        if (cdl < (int)choiceBlock.size() - 4) ++cdl;
+}
+
+void Dialog::DisplayCurrentBlock()
+{
+    int spacer = 0;
+    m_Boxes.getBox("Convo").getText().clear();
+
+    if(m_mode == DIALOG_MODE_READ)
+    {
+        for (int i = cdl; i < cdl + 4; ++i)
+        {
+            if(i < (int)displayBlock.size())
+            {
+                m_Boxes.getBox("Convo").addText(displayBlock[i], sf::Vector2f(260, 10 + (40 * spacer++)), 40);
+            }
+        }
+    }
+    else if (m_mode == DIALOG_MODE_CHOICE)
+    {
+        for (int i = cdl; i < cdl + 4; ++i)
+        {
+            if(i < (int)choiceBlock.size())
+            {
+                m_Boxes.getBox("Convo").addText(choiceBlock[i], sf::Vector2f(260, 10 + (40 * spacer++)), 40);
+            }
+        }
+    }
+}
+
+void Dialog::PrevChoice()
+{
+    if(m_choice > 0) m_choice--;
+    else RewindConvo();
+    std::cout << "Debug: m_choice/cdl: " << m_choice << "/" << cdl << std::endl;
+}
+
+void Dialog::NextChoice()
+{
+    if(m_choice < 3 && m_choice < (int)choiceBlock.size() - 1) m_choice++;
+    else if(m_choice == 3 && m_choice + cdl < (int)choiceBlock.size()) AdvanceConvo();
+    std::cout << "Debug: m_choice/cdl: " << m_choice << "/" << cdl << std::endl;
+}
+
+void Dialog::ConfirmChoice()
+{
+    m_mode = DIALOG_MODE_READ;
+    DisplayCurrentBlock();
+    std::cout << "Choice: " << m_choice + cdl << std::endl;
+
+    auto it = ConsequenceMap.find(m_choice + cdl);
+    if (it != ConsequenceMap.end())
+    {
+        for (auto& s : it->second)
+        {
+            std::vector<std::string> line = Tokenize(s);
+            std::string command = line[0];
+            line.erase(line.begin());
+
+            if (command == "SAY")
+            {
+                m_currFace = m_pcFace;
+                std::string output = reconstituteString(line);
+                Tool::FormatLineIntoVector(output, 55, displayBlock);
+                DisplayCurrentBlock();
+            }
+            else if (command == "ATTACK_PLAYER")
+            {
+                e->PopState();
+                e->PushState(Combat::Instance());
+            }
+            else if (command == "END")
+            {
+                setCurrentLine(dialog.size() - 1);
+            }
+            else if (command == "RESTART")
+            {
+                //std::cout << "RESTARTING" << std::endl;
+                setCurrentLine(choice_start);
+            }
+            else if (command == "GOTO")
+            {
+                doGoto(line[0]);
+            }
+            else if (command == "GIVE_PLAYER")
+            {
+                std::stringstream ss;
+                int item, amount;
+                ss << line[0] << " " << line[1];
+                ss >> item >> amount;
+                HeroPtr->Inventory_giveItem(item, amount);
+            }
+            else if (command == "TAKE_PLAYER")
+            {
+                std::stringstream ss;
+                int item, amount;
+                ss << line[0] << " " << line[1];
+                ss >> item >> amount;
+                HeroPtr->Inventory_takeItem(item, amount);
+            }
+            else
+            {
+                std::cerr << "Dialog Script Error: Unknown Consequence Command, Current Line: " << getCurrentLine() << std::endl;
+            }
+        }
+    }
+    setPreviousLine(-1);
+}

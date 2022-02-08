@@ -1,0 +1,3415 @@
+# depslib dependency file v1.0
+1479697138 source:/home/mrt/Documents/Code/Projects/Bloodlines/gameengine.cpp
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+
+1479701420 /home/mrt/Documents/Code/Projects/Bloodlines/gameengine.h
+	<SFML/Graphics.hpp>
+	<vector>
+	"level.h"
+	"party_member.h"
+
+1479634483 /home/mrt/Documents/Code/Projects/Bloodlines/gamestate.h
+	"gameengine.h"
+
+1479635353 source:/home/mrt/Documents/Code/Projects/Bloodlines/main.cpp
+	<iostream>
+	"gameengine.h"
+	"state_intro.h"
+
+1479634226 /home/mrt/Documents/Code/Projects/Bloodlines/state_intro.h
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+
+1479706155 /home/mrt/Documents/Code/Projects/Bloodlines/state_play.h
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"level.h"
+
+1479552565 /home/mrt/Documents/Code/Projects/Bloodlines/state_menu.h
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+
+1479634400 source:/home/mrt/Documents/Code/Projects/Bloodlines/state_intro.cpp
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"state_intro.h"
+	"state_start_menu.h"
+
+1479555741 source:/home/mrt/Documents/Code/Projects/Bloodlines/state_menu.cpp
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"state_menu.h"
+
+1479706155 source:/home/mrt/Documents/Code/Projects/Bloodlines/state_play.cpp
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"gameengine.h"
+	"state_play.h"
+	"state_game_menu.h"
+
+1479634400 source:/home/mrt/Documents/Code/Projects/Bloodlines/state_game_menu.cpp
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"state_game_menu.h"
+
+1479634227 /home/mrt/Documents/Code/Projects/Bloodlines/state_game_menu.h
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+
+1479634227 /home/mrt/Documents/Code/Projects/Bloodlines/state_start_menu.h
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+
+1479634552 source:/home/mrt/Documents/Code/Projects/Bloodlines/state_start_menu.cpp
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"gameengine.h"
+	"state_start_menu.h"
+	"state_play.h"
+
+1479646337 source:/home/mrt/Documents/Code/Projects/Bloodlines/tile.cpp
+	"tile.h"
+
+1479685489 /home/mrt/Documents/Code/Projects/Bloodlines/tile.h
+	<SFML/Graphics.hpp>
+
+1479684457 source:/home/mrt/Documents/Code/Projects/Bloodlines/zone.cpp
+	"zone.h"
+	<cassert>
+	<iostream>
+	<sstream>
+	<string>
+	<fstream>
+
+1479680938 /home/mrt/Documents/Code/Projects/Bloodlines/zone.h
+	<SFML/Graphics.hpp>
+	<vector>
+	"tile.h"
+
+1479706155 source:/home/mrt/Documents/Code/Projects/Bloodlines/level.cpp
+	"level.h"
+
+1479706686 /home/mrt/Documents/Code/Projects/Bloodlines/level.h
+	"zone.h"
+	<string>
+
+1479701707 /home/mrt/Documents/Code/Projects/Bloodlines/party_member.h
+	<SFML/Graphics.hpp>
+
+1479701053 source:/home/mrt/Documents/Code/Projects/Bloodlines/party_member.cpp
+	"party_member.h"
+
+1643231390 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/gameengine.cpp
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+
+1526248932 /home/mrt/Documents/Code/Projects/Bloodlines/inc/gameengine.h
+	<SFML/Graphics.hpp>
+	<vector>
+	<map>
+	"party.h"
+	"map_level.h"
+	"item.h"
+	"boxes.h"
+	"status_message.h"
+	"combat_action.h"
+	"special.h"
+
+1479973935 /home/mrt/Documents/Code/Projects/Bloodlines/inc/level.h
+	<SFML/Graphics.hpp>
+	"constants.h"
+	"zone.h"
+	<string>
+	<iostream>
+	<vector>
+	<sstream>
+
+1479973935 /home/mrt/Documents/Code/Projects/Bloodlines/inc/zone.h
+	<SFML/Graphics.hpp>
+	<vector>
+	<string>
+	"tile.h"
+
+1479685489 /home/mrt/Documents/Code/Projects/Bloodlines/inc/tile.h
+	<SFML/Graphics.hpp>
+
+1482989622 /home/mrt/Documents/Code/Projects/Bloodlines/inc/party_member.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"constants.h"
+
+1526248932 /home/mrt/Documents/Code/Projects/Bloodlines/inc/gamestate.h
+	"gameengine.h"
+
+1479974043 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/level.cpp
+	"level.h"
+
+1526248863 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/main.cpp
+	<iostream>
+	"constants.h"
+	"gameengine.h"
+	"states/intro.h"
+
+1481049691 /home/mrt/Documents/Code/Projects/Bloodlines/inc/state_intro.h
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+
+1482917963 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/party_member.cpp
+	"party_member.h"
+
+1482010691 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/state_game_menu.cpp
+	"state_game_menu.h"
+
+1482010957 /home/mrt/Documents/Code/Projects/Bloodlines/inc/state_game_menu.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"states/template.h"
+
+1481913490 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/state_intro.cpp
+	<SFML/Graphics.hpp>
+	<iostream>
+	"gameengine.h"
+	"gamestate.h"
+	"state_intro.h"
+	"state_start_menu.h"
+
+1481919839 /home/mrt/Documents/Code/Projects/Bloodlines/inc/state_start_menu.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"state_play.h"
+	"states/character_designer.h"
+
+1482007709 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/state_play.cpp
+	"state_play.h"
+
+1481971144 /home/mrt/Documents/Code/Projects/Bloodlines/inc/state_play.h
+	<sstream>
+	<iostream>
+	<numeric>
+	<SFML/Graphics.hpp>
+	"constants.h"
+	"gamestate.h"
+	"map_level.h"
+	"gameengine.h"
+	"state_game_menu.h"
+	"state_edit_map.h"
+	"boxes.h"
+	"tool.h"
+	"states/minimenu.h"
+
+1482010521 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/state_start_menu.cpp
+	"state_start_menu.h"
+
+1479646337 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/tile.cpp
+	"tile.h"
+
+1479973965 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/zone.cpp
+	"zone.h"
+	<cassert>
+	<iostream>
+	<sstream>
+	<string>
+	<fstream>
+
+1526248933 /home/mrt/Documents/Code/Projects/Bloodlines/inc/party.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	<deque>
+	<string>
+	<sstream>
+	"hero.h"
+	"quest.h"
+	"constants.h"
+	"map_level.h"
+	"tool.h"
+
+1526248862 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/party.cpp
+	"party.h"
+
+1526248933 /home/mrt/Documents/Code/Projects/Bloodlines/inc/constants.h
+	<SFML/Graphics.hpp>
+	<cmath>
+
+1526248862 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/map_level.cpp
+	"map_level.h"
+
+1526248928 /home/mrt/Documents/Code/Projects/Bloodlines/inc/map_level.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<string>
+	<iostream>
+	<fstream>
+	<vector>
+	<sstream>
+	<map>
+	"tool.h"
+	"beacon.h"
+	"constants.h"
+	"map_zone.h"
+	"npc.h"
+	"waypoint.h"
+	"enemy.h"
+	"trigger.h"
+
+1526248927 /home/mrt/Documents/Code/Projects/Bloodlines/inc/map_zone.h
+	<SFML/Graphics.hpp>
+	<vector>
+	<string>
+	<iostream>
+	<sstream>
+	<fstream>
+	<bitset>
+	<tool.h>
+	"map_tile.h"
+	"object.h"
+	"constants.h"
+	"map_tile_attributes.h"
+
+1526248933 /home/mrt/Documents/Code/Projects/Bloodlines/inc/map_tile.h
+	<SFML/Graphics.hpp>
+	<vector>
+	<iostream>
+	<bitset>
+	"constants.h"
+	"map_tile_attributes.h"
+
+1526248864 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/map_tile.cpp
+	"map_tile.h"
+
+1526248862 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/map_zone.cpp
+	"map_zone.h"
+
+1526248926 /home/mrt/Documents/Code/Projects/Bloodlines/inc/tool.h
+	<SFML/Graphics.hpp>
+	<math.h>
+	<string>
+	<iostream>
+	<fstream>
+	<sstream>
+	<random>
+	<sys/types.h>
+	<dirent.h>
+	<errno.h>
+	"constants.h"
+
+1526248863 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/tool.cpp
+	"tool.h"
+
+1481848866 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/state_edit_map.cpp
+	"state_edit_map.h"
+
+1481667644 /home/mrt/Documents/Code/Projects/Bloodlines/inc/state_edit_map.h
+	<SFML/Graphics.hpp>
+	<bitset>
+	<map>
+	<iostream>
+	<fstream>
+	<sstream>
+	"map_tile.h"
+	"constants.h"
+	"map_zone.h"
+	"tool.h"
+	"boxes.h"
+	"gameengine.h"
+	"gamestate.h"
+
+1526248926 /home/mrt/Documents/Code/Projects/Bloodlines/inc/map_tile_attributes.h
+
+1526248862 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/box.cpp
+	"box.h"
+
+1526248928 /home/mrt/Documents/Code/Projects/Bloodlines/inc/box.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<string>
+	<iostream>
+
+1526248862 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/boxes.cpp
+	"boxes.h"
+
+1526248927 /home/mrt/Documents/Code/Projects/Bloodlines/inc/boxes.h
+	<iostream>
+	<initializer_list>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	"box.h"
+	"tool.h"
+
+1481928523 /home/mrt/Documents/Code/Projects/Bloodlines/inc/state_stats.h
+	<iostream>
+	<sstream>
+	<string>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+
+1481969692 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/state_stats.cpp
+	"state_stats.h"
+
+1526248930 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/minimenu.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	"gamestate.h"
+	"boxes.h"
+	"gameengine.h"
+	"gamestate.h"
+	"states/tactics.h"
+	"states/menu_options.h"
+	"states/status_stats.h"
+	"states/status_inventory.h"
+	"states/status_quests.h"
+	"states/status_specials.h"
+
+1526248866 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/minimenu.cpp
+	"states/minimenu.h"
+
+1526248867 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/character_designer.cpp
+	"states/character_designer.h"
+
+1526248932 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/character_designer.h
+	<iostream>
+	<string>
+	<math.h>
+	<algorithm>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"states/play.h"
+	"tool.h"
+	"hero.h"
+
+1481918519 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/state_hero_maker.cpp
+	<SFML/Graphics.hpp>
+	<iostream>
+	"gameengine.h"
+	"gamestate.h"
+	"states/state_hero_maker.h"
+
+1481917969 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/state_hero_maker.h
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+
+1482011888 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/template.cpp
+	"states/template.h"
+
+1482012772 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/template.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+
+1526248866 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/save_load.cpp
+	"states/save_load.h"
+
+1526248865 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/edit_map.cpp
+	"states/edit_map.h"
+
+1526248930 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/edit_map.h
+	<SFML/Graphics.hpp>
+	<bitset>
+	<map>
+	<iostream>
+	<fstream>
+	<sstream>
+	"map_tile.h"
+	"constants.h"
+	"map_zone.h"
+	"tool.h"
+	"boxes.h"
+	"gameengine.h"
+	"gamestate.h"
+	"states/edit_beacon.h"
+	"states/edit_objects.h"
+	"states/edit_triggers.h"
+	"states/input_string.h"
+
+1482062353 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/game_menu.cpp
+	"states/game_menu.h"
+
+1482013602 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/game_menu.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"states/save_load.h"
+
+1483011408 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/stats.h
+	<iostream>
+	<sstream>
+	<string>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+
+1526248929 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/play.h
+	<sstream>
+	<iostream>
+	<numeric>
+	<algorithm>
+	<SFML/Graphics.hpp>
+	"constants.h"
+	"gamestate.h"
+	"map_level.h"
+	"gameengine.h"
+	"states/edit_map.h"
+	"states/edit_enemy.h"
+	"states/combat.h"
+	"states/minimenu.h"
+	"states/minimenu_edit.h"
+	"states/dialog.h"
+	"boxes.h"
+	"tool.h"
+	"trigger.h"
+
+1526248867 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/intro.cpp
+	<SFML/Graphics.hpp>
+	<iostream>
+	"gameengine.h"
+	"gamestate.h"
+	"states/intro.h"
+	"states/start_menu.h"
+
+1526248931 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/intro.h
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+
+1526248929 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/start_menu.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"states/save_load.h"
+	"states/character_designer.h"
+
+1526248867 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/play.cpp
+	"states/play.h"
+
+1526248868 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/start_menu.cpp
+	"states/start_menu.h"
+
+1487342130 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/stats.cpp
+	"states/stats.h"
+
+1526248931 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/save_load.h
+	<iostream>
+	<algorithm>
+	<vector>
+	<string>
+	<ctime>
+	<sstream>
+	<fstream>
+	<SFML/Graphics.hpp>
+	"states/play.h"
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"special.h"
+	"party.h"
+	"hero.h"
+
+1482051549 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/savegame.cpp
+	"savegame.h"
+
+1482051958 /home/mrt/Documents/Code/Projects/Bloodlines/inc/savegame.h
+	<vector>
+	<string>
+	<ctime>
+	<sstream>
+	<fstream>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+
+1526248864 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/edit_enemy.cpp
+	"states/edit_enemy.h"
+
+1526248929 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/edit_enemy.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+
+1526248865 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/combat.cpp
+	"states/combat.h"
+
+1526248931 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/combat.h
+	<iostream>
+	<vector>
+	<deque>
+	<utility>
+	<SFML/Graphics.hpp>
+	"constants.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"monster.h"
+	"hero.h"
+	"special.h"
+	"enemy.h"
+	"states/combat_cutscene.h"
+	"status_message.h"
+	"combat_action.h"
+
+1526248927 /home/mrt/Documents/Code/Projects/Bloodlines/inc/beacon.h
+
+1482225380 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/beacon.cpp
+	"beacon.h"
+
+1526248865 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/edit_beacon.cpp
+	"states/edit_beacon.h"
+
+1526248931 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/edit_beacon.h
+	<iostream>
+	<sstream>
+	<map>
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"beacon.h"
+
+1526248866 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/menu_options.cpp
+	<SFML/Graphics.hpp>
+	<iostream>
+	"gameengine.h"
+	"gamestate.h"
+	"states/menu_options.h"
+	"states/save_load.h"
+
+1526248929 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/menu_options.h
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+
+1482918222 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/monster.cpp
+	"monster.h"
+
+1526248927 /home/mrt/Documents/Code/Projects/Bloodlines/inc/monster.h
+	<SFML/Graphics.hpp>
+	<string>
+
+1482899579 /home/mrt/Documents/Code/Projects/Bloodlines/src/states/combat.impl
+
+1482908043 /home/mrt/Documents/Code/Projects/Bloodlines/src/states/combat_details.src
+
+1526248863 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/hero.cpp
+	"hero.h"
+
+1526248928 /home/mrt/Documents/Code/Projects/Bloodlines/inc/hero.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"constants.h"
+	"math.h"
+	"special.h"
+	"status.h"
+	"effect.h"
+	"item.h"
+
+1526248865 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/tactics.cpp
+	"states/tactics.h"
+
+1526248932 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/tactics.h
+	<iostream>
+	<sstream>
+	<string>
+	<algorithm>
+	<numeric>
+	<cmath>
+	<SFML/Graphics.hpp>
+	"constants.h"
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+
+1493800171 /home/mrt/Documents/Code/Projects/Bloodlines/inc/spell.h
+	<SFML/Graphics.hpp>
+
+1493112035 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/spell.cpp
+	"spell.h"
+
+1483617070 /home/mrt/Documents/Code/Projects/Bloodlines/inc/statuses.h
+
+1526248863 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/status.cpp
+	"status.h"
+
+1526248927 /home/mrt/Documents/Code/Projects/Bloodlines/inc/status.h
+	<iostream>
+	<sstream>
+	"special.h"
+
+1526248928 /home/mrt/Documents/Code/Projects/Bloodlines/inc/item.h
+	<string>
+
+1526248863 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/item.cpp
+	"item.h"
+
+1526248866 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/status_inventory.cpp
+	"states/status_inventory.h"
+
+1526248931 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/status_inventory.h
+	<iostream>
+	<sstream>
+	<string>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"states/action_cutscene.h"
+
+1526248867 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/status_quests.cpp
+	"states/status_quests.h"
+
+1526248931 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/status_quests.h
+	<iostream>
+	<sstream>
+	<string>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"quest.h"
+	"boxes.h"
+	"tool.h"
+
+1493801564 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/status_spells.cpp
+	"states/status_specials.h"
+
+1493742122 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/status_spells.h
+	<iostream>
+	<sstream>
+	<string>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+
+1526248929 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/minimenu_edit.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"states/edit_map.h"
+	"states/edit_enemy.h"
+	"states/edit_item.h"
+	"states/edit_npc_waypoint.h"
+	"states/edit_anim.h"
+
+1526248866 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/minimenu_edit.cpp
+	"states/minimenu_edit.h"
+
+1526248866 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/edit_item.cpp
+	"states/edit_item.h"
+
+1526248931 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/edit_item.h
+	<iostream>
+	<fstream>
+	<sstream>
+	<algorithm>
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"item.h"
+
+1526248863 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/npc.cpp
+	"npc.h"
+
+1526248927 /home/mrt/Documents/Code/Projects/Bloodlines/inc/npc.h
+	<vector>
+	<string>
+	"constants.h"
+	"waypoint.h"
+	"tool.h"
+	<SFML/Graphics.hpp>
+
+1526248926 /home/mrt/Documents/Code/Projects/Bloodlines/inc/waypoint.h
+	"SFML/Graphics.hpp"
+	<string>
+
+1485072315 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/waypoint.cpp
+	"waypoint.h"
+
+1526248932 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/edit_npc_waypoint.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"constants.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"npc.h"
+
+1526248865 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/edit_npc_waypoint.cpp
+	"states/edit_npc_waypoint.h"
+
+1485089769 source:/home/mrt/Documents/Code/Projects/Bloodlines/inc/npc.cpp
+	"npc.h"
+
+1486060663 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/conversation.h
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	<iostream>
+	<map>
+	<fstream>
+	<string>
+	<vector>
+	<sstream>
+
+1486063136 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/conversation.cpp
+	"states/conversation.h"
+
+1526248930 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/dialog.h
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"npc.h"
+	"hero.h"
+	"states/combat.h"
+	"states/action_cutscene.h"
+	"states/store.h"
+	<iostream>
+	<map>
+	<fstream>
+	<string>
+	<vector>
+	<sstream>
+
+1526248864 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/dialog.cpp
+	"states/dialog.h"
+
+1526248867 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/action_cutscene.cpp
+	"states/action_cutscene.h"
+
+1526248929 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/action_cutscene.h
+	<iostream>
+	<sstream>
+	<SFML/Graphics.hpp>
+	<fstream>
+	"gamestate.h"
+	"states/combat.h"
+	"boxes.h"
+	"tool.h"
+
+1526248928 /home/mrt/Documents/Code/Projects/Bloodlines/inc/object.h
+	<SFML/Graphics.hpp>
+
+1487855778 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/object.cpp
+	"object.h"
+
+1526248932 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/edit_objects.h
+	<iostream>
+	<sstream>
+	<SFML/Graphics.hpp>
+	"object.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+
+1526248865 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/edit_objects.cpp
+	"states/edit_objects.h"
+
+1526248932 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/store.h
+	<iostream>
+	<sstream>
+	<string>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"hero.h"
+
+1526248866 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/store.cpp
+	"states/store.h"
+
+1492922626 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/enemy.cpp
+	"enemy.h"
+
+1526248926 /home/mrt/Documents/Code/Projects/Bloodlines/inc/enemy.h
+	<string>
+	<vector>
+	<cmath>
+	<SFML/Graphics.hpp>
+	"status.h"
+
+1526248865 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/status_stats.cpp
+	"states/status_stats.h"
+
+1526248931 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/status_stats.h
+	<iostream>
+	<sstream>
+	<string>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+
+1493117494 /home/mrt/Documents/Code/Projects/Bloodlines/inc/attack.h
+
+1490361634 /home/mrt/Documents/Code/Projects/Bloodlines/include/trigger.h
+
+1526248926 /home/mrt/Documents/Code/Projects/Bloodlines/inc/trigger.h
+
+1526248932 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/edit_triggers.h
+	<iostream>
+	<sstream>
+	<algorithm>
+	<SFML/Graphics.hpp>
+	"object.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	<states/input_string.h>
+
+1526248866 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/edit_triggers.cpp
+	"states/edit_triggers.h"
+
+1526248929 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/input_string.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+
+1526248864 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/input_string.cpp
+	"states/input_string.h"
+
+1526248927 /home/mrt/Documents/Code/Projects/Bloodlines/inc/status_message.h
+
+1526248932 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/combat_cutscene.h
+	"boxes.h"
+	"tool.h"
+	"gamestate.h"
+	"status_message.h"
+	"combat_action.h"
+	"hero.h"
+	"prop.h"
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+
+1526248867 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/combat_cutscene.cpp
+	"states/combat_cutscene.h"
+
+1492471834 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/Blob.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+
+1526248928 /home/mrt/Documents/Code/Projects/Bloodlines/inc/combat_action.h
+
+1526248933 /home/mrt/Documents/Code/Projects/Bloodlines/inc/prop.h
+	<SFML/Graphics.hpp>
+
+1526248932 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/edit_anim.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	<set>
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"input_string.h"
+
+1526248864 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/edit_anim.cpp
+	"states/edit_anim.h"
+
+1526248929 /home/mrt/Documents/Code/Projects/Bloodlines/inc/effect.h
+
+1526248927 /home/mrt/Documents/Code/Projects/Bloodlines/inc/special.h
+	<SFML/Graphics.hpp>
+
+1526248862 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/special.cpp
+	"special.h"
+
+1526248929 /home/mrt/Documents/Code/Projects/Bloodlines/inc/states/status_specials.h
+	<iostream>
+	<sstream>
+	<string>
+	<SFML/Graphics.hpp>
+	"special.h"
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+
+1526248868 source:/home/mrt/Documents/Code/Projects/Bloodlines/src/states/status_specials.cpp
+	"states/status_specials.h"
+
+1526248927 /home/mrt/Documents/Code/Projects/Bloodlines/inc/quest.h
+
+1495879496 source:/home/mrt/Bloodlines/src/box.cpp
+	"box.h"
+
+1495879540 /home/mrt/Bloodlines/inc/box.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<string>
+	<iostream>
+
+1495879743 source:/home/mrt/Bloodlines/src/boxes.cpp
+	"boxes.h"
+
+1495879496 /home/mrt/Bloodlines/inc/boxes.h
+	<iostream>
+	<initializer_list>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	"box.h"
+	"tool.h"
+
+1495548009 /home/mrt/Bloodlines/inc/tool.h
+	<SFML/Graphics.hpp>
+	<math.h>
+	<string>
+	<iostream>
+	<fstream>
+	<sstream>
+	<random>
+	<sys/types.h>
+	<dirent.h>
+	<errno.h>
+	"constants.h"
+
+1495548010 /home/mrt/Bloodlines/inc/constants.h
+	<SFML/Graphics.hpp>
+	<cmath>
+
+1495137751 source:/home/mrt/Bloodlines/src/enemy.cpp
+	"enemy.h"
+
+1495548010 /home/mrt/Bloodlines/inc/enemy.h
+	<string>
+	<vector>
+	<cmath>
+	<SFML/Graphics.hpp>
+	"status.h"
+
+1495802742 /home/mrt/Bloodlines/inc/status.h
+	<iostream>
+	<sstream>
+	"special.h"
+
+1496839358 /home/mrt/Bloodlines/inc/special.h
+	<SFML/Graphics.hpp>
+
+1496843876 source:/home/mrt/Bloodlines/src/gameengine.cpp
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+
+1495548009 /home/mrt/Bloodlines/inc/gameengine.h
+	<SFML/Graphics.hpp>
+	<vector>
+	<map>
+	"party.h"
+	"map_level.h"
+	"item.h"
+	"boxes.h"
+	"status_message.h"
+	"combat_action.h"
+	"special.h"
+
+1495548010 /home/mrt/Bloodlines/inc/party.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	<deque>
+	<string>
+	<sstream>
+	"hero.h"
+	"quest.h"
+	"constants.h"
+	"map_level.h"
+	"tool.h"
+
+1495877925 /home/mrt/Bloodlines/inc/hero.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"constants.h"
+	"math.h"
+	"special.h"
+	"status.h"
+	"effect.h"
+	"item.h"
+
+1495548009 /home/mrt/Bloodlines/inc/effect.h
+
+1495548009 /home/mrt/Bloodlines/inc/item.h
+	<string>
+
+1495548009 /home/mrt/Bloodlines/inc/quest.h
+
+1496498854 /home/mrt/Bloodlines/inc/map_level.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<string>
+	<iostream>
+	<fstream>
+	<vector>
+	<sstream>
+	<map>
+	"tool.h"
+	"beacon.h"
+	"constants.h"
+	"map_zone.h"
+	"npc.h"
+	"waypoint.h"
+	"enemy.h"
+	"trigger.h"
+
+1495548010 /home/mrt/Bloodlines/inc/beacon.h
+
+1496498757 /home/mrt/Bloodlines/inc/map_zone.h
+	<SFML/Graphics.hpp>
+	<vector>
+	<string>
+	<iostream>
+	<sstream>
+	<fstream>
+	<bitset>
+	<tool.h>
+	"map_tile.h"
+	"object.h"
+	"constants.h"
+	"map_tile_attributes.h"
+
+1495548009 /home/mrt/Bloodlines/inc/map_tile.h
+	<SFML/Graphics.hpp>
+	<vector>
+	<iostream>
+	<bitset>
+	"constants.h"
+	"map_tile_attributes.h"
+
+1495548009 /home/mrt/Bloodlines/inc/map_tile_attributes.h
+
+1495548009 /home/mrt/Bloodlines/inc/object.h
+	<SFML/Graphics.hpp>
+
+1495548010 /home/mrt/Bloodlines/inc/npc.h
+	<vector>
+	<string>
+	"constants.h"
+	"waypoint.h"
+	"tool.h"
+	<SFML/Graphics.hpp>
+
+1495548009 /home/mrt/Bloodlines/inc/waypoint.h
+	"SFML/Graphics.hpp"
+	<string>
+
+1495548009 /home/mrt/Bloodlines/inc/trigger.h
+
+1495548010 /home/mrt/Bloodlines/inc/status_message.h
+
+1495882714 /home/mrt/Bloodlines/inc/combat_action.h
+
+1495548009 /home/mrt/Bloodlines/inc/gamestate.h
+	"gameengine.h"
+
+1496839358 source:/home/mrt/Bloodlines/src/hero.cpp
+	"hero.h"
+
+1495548037 source:/home/mrt/Bloodlines/src/item.cpp
+	"item.h"
+
+1495548036 source:/home/mrt/Bloodlines/src/main.cpp
+	<iostream>
+	"constants.h"
+	"gameengine.h"
+	"states/intro.h"
+
+1495548010 /home/mrt/Bloodlines/inc/states/intro.h
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+
+1496498919 source:/home/mrt/Bloodlines/src/map_level.cpp
+	"map_level.h"
+
+1495548037 source:/home/mrt/Bloodlines/src/map_tile.cpp
+	"map_tile.h"
+
+1496498975 source:/home/mrt/Bloodlines/src/map_zone.cpp
+	"map_zone.h"
+
+1495548036 source:/home/mrt/Bloodlines/src/npc.cpp
+	"npc.h"
+
+1495548036 source:/home/mrt/Bloodlines/src/party.cpp
+	"party.h"
+
+1496841909 source:/home/mrt/Bloodlines/src/special.cpp
+	"special.h"
+
+1496740475 source:/home/mrt/Bloodlines/src/states/action_cutscene.cpp
+	"states/action_cutscene.h"
+
+1496469829 /home/mrt/Bloodlines/inc/states/action_cutscene.h
+	<iostream>
+	<sstream>
+	<SFML/Graphics.hpp>
+	<fstream>
+	"gamestate.h"
+	"states/combat.h"
+	"boxes.h"
+	"tool.h"
+
+1496240704 /home/mrt/Bloodlines/inc/states/combat.h
+	<iostream>
+	<vector>
+	<deque>
+	<utility>
+	<SFML/Graphics.hpp>
+	"constants.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"monster.h"
+	"hero.h"
+	"special.h"
+	"enemy.h"
+	"states/combat_cutscene.h"
+	"status_message.h"
+	"combat_action.h"
+
+1495548009 /home/mrt/Bloodlines/inc/monster.h
+	<SFML/Graphics.hpp>
+	<string>
+
+1495548010 /home/mrt/Bloodlines/inc/states/combat_cutscene.h
+	"boxes.h"
+	"tool.h"
+	"gamestate.h"
+	"status_message.h"
+	"combat_action.h"
+	"hero.h"
+	"prop.h"
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+
+1496831723 /home/mrt/Bloodlines/inc/prop.h
+	<SFML/Graphics.hpp>
+
+1495548036 source:/home/mrt/Bloodlines/src/states/character_designer.cpp
+	"states/character_designer.h"
+
+1495548010 /home/mrt/Bloodlines/inc/states/character_designer.h
+	<iostream>
+	<string>
+	<math.h>
+	<algorithm>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"states/play.h"
+	"tool.h"
+	"hero.h"
+
+1496498757 /home/mrt/Bloodlines/inc/states/play.h
+	<sstream>
+	<iostream>
+	<numeric>
+	<algorithm>
+	<SFML/Graphics.hpp>
+	"constants.h"
+	"gamestate.h"
+	"map_level.h"
+	"gameengine.h"
+	"states/edit_map.h"
+	"states/edit_enemy.h"
+	"states/combat.h"
+	"states/minimenu.h"
+	"states/minimenu_edit.h"
+	"states/dialog.h"
+	"boxes.h"
+	"tool.h"
+	"trigger.h"
+
+1495548010 /home/mrt/Bloodlines/inc/states/edit_map.h
+	<SFML/Graphics.hpp>
+	<bitset>
+	<map>
+	<iostream>
+	<fstream>
+	<sstream>
+	"map_tile.h"
+	"constants.h"
+	"map_zone.h"
+	"tool.h"
+	"boxes.h"
+	"gameengine.h"
+	"gamestate.h"
+	"states/edit_beacon.h"
+	"states/edit_objects.h"
+	"states/edit_triggers.h"
+	"states/input_string.h"
+
+1495548009 /home/mrt/Bloodlines/inc/states/edit_beacon.h
+	<iostream>
+	<sstream>
+	<map>
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"beacon.h"
+
+1495548010 /home/mrt/Bloodlines/inc/states/edit_objects.h
+	<iostream>
+	<sstream>
+	<SFML/Graphics.hpp>
+	"object.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+
+1495548010 /home/mrt/Bloodlines/inc/states/edit_triggers.h
+	<iostream>
+	<sstream>
+	<algorithm>
+	<SFML/Graphics.hpp>
+	"object.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	<states/input_string.h>
+
+1495548010 /home/mrt/Bloodlines/inc/states/input_string.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+
+1495548009 /home/mrt/Bloodlines/inc/states/edit_enemy.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+
+1495548010 /home/mrt/Bloodlines/inc/states/minimenu.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	"gamestate.h"
+	"boxes.h"
+	"gameengine.h"
+	"gamestate.h"
+	"states/tactics.h"
+	"states/menu_options.h"
+	"states/status_stats.h"
+	"states/status_inventory.h"
+	"states/status_quests.h"
+	"states/status_specials.h"
+
+1495548009 /home/mrt/Bloodlines/inc/states/tactics.h
+	<iostream>
+	<sstream>
+	<string>
+	<algorithm>
+	<numeric>
+	<cmath>
+	<SFML/Graphics.hpp>
+	"constants.h"
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+
+1495548009 /home/mrt/Bloodlines/inc/states/menu_options.h
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+
+1495548010 /home/mrt/Bloodlines/inc/states/status_stats.h
+	<iostream>
+	<sstream>
+	<string>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+
+1495548010 /home/mrt/Bloodlines/inc/states/status_inventory.h
+	<iostream>
+	<sstream>
+	<string>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"states/action_cutscene.h"
+
+1495548010 /home/mrt/Bloodlines/inc/states/status_quests.h
+	<iostream>
+	<sstream>
+	<string>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"quest.h"
+	"boxes.h"
+	"tool.h"
+
+1495792043 /home/mrt/Bloodlines/inc/states/status_specials.h
+	<iostream>
+	<sstream>
+	<string>
+	<SFML/Graphics.hpp>
+	"special.h"
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+
+1495548010 /home/mrt/Bloodlines/inc/states/minimenu_edit.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"states/edit_map.h"
+	"states/edit_enemy.h"
+	"states/edit_item.h"
+	"states/edit_npc_waypoint.h"
+	"states/edit_anim.h"
+
+1495548009 /home/mrt/Bloodlines/inc/states/edit_item.h
+	<iostream>
+	<fstream>
+	<sstream>
+	<algorithm>
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"item.h"
+
+1495548010 /home/mrt/Bloodlines/inc/states/edit_npc_waypoint.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"constants.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"npc.h"
+
+1495548010 /home/mrt/Bloodlines/inc/states/edit_anim.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	<set>
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"input_string.h"
+
+1495548010 /home/mrt/Bloodlines/inc/states/dialog.h
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"npc.h"
+	"hero.h"
+	"states/combat.h"
+	"states/action_cutscene.h"
+	"states/store.h"
+	<iostream>
+	<map>
+	<fstream>
+	<string>
+	<vector>
+	<sstream>
+
+1495548010 /home/mrt/Bloodlines/inc/states/store.h
+	<iostream>
+	<sstream>
+	<string>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"hero.h"
+
+1496839451 source:/home/mrt/Bloodlines/src/states/combat.cpp
+	"states/combat.h"
+
+1496841198 source:/home/mrt/Bloodlines/src/states/combat_cutscene.cpp
+	"states/combat_cutscene.h"
+
+1495548036 source:/home/mrt/Bloodlines/src/states/dialog.cpp
+	"states/dialog.h"
+
+1495548036 source:/home/mrt/Bloodlines/src/states/edit_anim.cpp
+	"states/edit_anim.h"
+
+1495548037 source:/home/mrt/Bloodlines/src/states/edit_beacon.cpp
+	"states/edit_beacon.h"
+
+1495548036 source:/home/mrt/Bloodlines/src/states/edit_enemy.cpp
+	"states/edit_enemy.h"
+
+1495548036 source:/home/mrt/Bloodlines/src/states/edit_item.cpp
+	"states/edit_item.h"
+
+1495548036 source:/home/mrt/Bloodlines/src/states/edit_map.cpp
+	"states/edit_map.h"
+
+1495548036 source:/home/mrt/Bloodlines/src/states/edit_npc_waypoint.cpp
+	"states/edit_npc_waypoint.h"
+
+1496412333 source:/home/mrt/Bloodlines/src/states/edit_objects.cpp
+	"states/edit_objects.h"
+
+1495548037 source:/home/mrt/Bloodlines/src/states/edit_triggers.cpp
+	"states/edit_triggers.h"
+
+1495548036 source:/home/mrt/Bloodlines/src/states/input_string.cpp
+	"states/input_string.h"
+
+1495548036 source:/home/mrt/Bloodlines/src/states/intro.cpp
+	<SFML/Graphics.hpp>
+	<iostream>
+	"gameengine.h"
+	"gamestate.h"
+	"states/intro.h"
+	"states/start_menu.h"
+
+1495548010 /home/mrt/Bloodlines/inc/states/start_menu.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"states/save_load.h"
+	"states/character_designer.h"
+
+1495548009 /home/mrt/Bloodlines/inc/states/save_load.h
+	<iostream>
+	<algorithm>
+	<vector>
+	<string>
+	<ctime>
+	<sstream>
+	<fstream>
+	<SFML/Graphics.hpp>
+	"states/play.h"
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"special.h"
+	"party.h"
+	"hero.h"
+
+1495548037 source:/home/mrt/Bloodlines/src/states/menu_options.cpp
+	<SFML/Graphics.hpp>
+	<iostream>
+	"gameengine.h"
+	"gamestate.h"
+	"states/menu_options.h"
+	"states/save_load.h"
+
+1495548036 source:/home/mrt/Bloodlines/src/states/minimenu.cpp
+	"states/minimenu.h"
+
+1495548037 source:/home/mrt/Bloodlines/src/states/minimenu_edit.cpp
+	"states/minimenu_edit.h"
+
+1496740569 source:/home/mrt/Bloodlines/src/states/play.cpp
+	"states/play.h"
+
+1495548037 source:/home/mrt/Bloodlines/src/states/save_load.cpp
+	"states/save_load.h"
+
+1495548036 source:/home/mrt/Bloodlines/src/states/start_menu.cpp
+	"states/start_menu.h"
+
+1495548036 source:/home/mrt/Bloodlines/src/states/status_inventory.cpp
+	"states/status_inventory.h"
+
+1495548036 source:/home/mrt/Bloodlines/src/states/status_quests.cpp
+	"states/status_quests.h"
+
+1495792475 source:/home/mrt/Bloodlines/src/states/status_specials.cpp
+	"states/status_specials.h"
+
+1495792706 source:/home/mrt/Bloodlines/src/states/status_stats.cpp
+	"states/status_stats.h"
+
+1495548037 source:/home/mrt/Bloodlines/src/states/store.cpp
+	"states/store.h"
+
+1495880412 source:/home/mrt/Bloodlines/src/states/tactics.cpp
+	"states/tactics.h"
+
+1495548036 source:/home/mrt/Bloodlines/src/status.cpp
+	"status.h"
+
+1496836382 source:/home/mrt/Bloodlines/src/tool.cpp
+	"tool.h"
+
+1526248862 source:/home/mrt/Code/Bloodlines/src/box.cpp
+	"box.h"
+
+1526248928 /home/mrt/Code/Bloodlines/inc/box.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<string>
+	<iostream>
+
+1526248862 source:/home/mrt/Code/Bloodlines/src/boxes.cpp
+	"boxes.h"
+
+1526248927 /home/mrt/Code/Bloodlines/inc/boxes.h
+	<iostream>
+	<initializer_list>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	"box.h"
+	"tool.h"
+
+1526248926 /home/mrt/Code/Bloodlines/inc/tool.h
+	<SFML/Graphics.hpp>
+	<math.h>
+	<string>
+	<iostream>
+	<fstream>
+	<sstream>
+	<random>
+	<sys/types.h>
+	<dirent.h>
+	<errno.h>
+	"constants.h"
+
+1526248933 /home/mrt/Code/Bloodlines/inc/constants.h
+	<SFML/Graphics.hpp>
+	<cmath>
+
+1526248863 source:/home/mrt/Code/Bloodlines/src/gameengine.cpp
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+
+1526248932 /home/mrt/Code/Bloodlines/inc/gameengine.h
+	<SFML/Graphics.hpp>
+	<vector>
+	<map>
+	"party.h"
+	"map_level.h"
+	"item.h"
+	"boxes.h"
+	"status_message.h"
+	"combat_action.h"
+	"special.h"
+
+1526248933 /home/mrt/Code/Bloodlines/inc/party.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	<deque>
+	<string>
+	<sstream>
+	"hero.h"
+	"quest.h"
+	"constants.h"
+	"map_level.h"
+	"tool.h"
+
+1526248928 /home/mrt/Code/Bloodlines/inc/hero.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"constants.h"
+	"math.h"
+	"special.h"
+	"status.h"
+	"effect.h"
+	"item.h"
+
+1526248927 /home/mrt/Code/Bloodlines/inc/special.h
+	<SFML/Graphics.hpp>
+
+1526248927 /home/mrt/Code/Bloodlines/inc/status.h
+	<iostream>
+	<sstream>
+	"special.h"
+
+1526248929 /home/mrt/Code/Bloodlines/inc/effect.h
+
+1526248928 /home/mrt/Code/Bloodlines/inc/item.h
+	<string>
+
+1526248927 /home/mrt/Code/Bloodlines/inc/quest.h
+
+1526248928 /home/mrt/Code/Bloodlines/inc/map_level.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<string>
+	<iostream>
+	<fstream>
+	<vector>
+	<sstream>
+	<map>
+	"tool.h"
+	"beacon.h"
+	"constants.h"
+	"map_zone.h"
+	"npc.h"
+	"waypoint.h"
+	"enemy.h"
+	"trigger.h"
+
+1526248927 /home/mrt/Code/Bloodlines/inc/beacon.h
+
+1526248927 /home/mrt/Code/Bloodlines/inc/map_zone.h
+	<SFML/Graphics.hpp>
+	<vector>
+	<string>
+	<iostream>
+	<sstream>
+	<fstream>
+	<bitset>
+	<tool.h>
+	"map_tile.h"
+	"object.h"
+	"constants.h"
+	"map_tile_attributes.h"
+
+1526248933 /home/mrt/Code/Bloodlines/inc/map_tile.h
+	<SFML/Graphics.hpp>
+	<vector>
+	<iostream>
+	<bitset>
+	"constants.h"
+	"map_tile_attributes.h"
+
+1526248926 /home/mrt/Code/Bloodlines/inc/map_tile_attributes.h
+
+1526248928 /home/mrt/Code/Bloodlines/inc/object.h
+	<SFML/Graphics.hpp>
+
+1526248927 /home/mrt/Code/Bloodlines/inc/npc.h
+	<vector>
+	<string>
+	"constants.h"
+	"waypoint.h"
+	"tool.h"
+	<SFML/Graphics.hpp>
+
+1526248926 /home/mrt/Code/Bloodlines/inc/waypoint.h
+	"SFML/Graphics.hpp"
+	<string>
+
+1526248926 /home/mrt/Code/Bloodlines/inc/enemy.h
+	<string>
+	<vector>
+	<cmath>
+	<SFML/Graphics.hpp>
+	"status.h"
+
+1526248926 /home/mrt/Code/Bloodlines/inc/trigger.h
+
+1526248927 /home/mrt/Code/Bloodlines/inc/status_message.h
+
+1526248928 /home/mrt/Code/Bloodlines/inc/combat_action.h
+
+1526248932 /home/mrt/Code/Bloodlines/inc/gamestate.h
+	"gameengine.h"
+
+1526248863 source:/home/mrt/Code/Bloodlines/src/hero.cpp
+	"hero.h"
+
+1526248863 source:/home/mrt/Code/Bloodlines/src/item.cpp
+	"item.h"
+
+1526248863 source:/home/mrt/Code/Bloodlines/src/main.cpp
+	<iostream>
+	"constants.h"
+	"gameengine.h"
+	"states/intro.h"
+
+1526248931 /home/mrt/Code/Bloodlines/inc/states/intro.h
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+
+1526248862 source:/home/mrt/Code/Bloodlines/src/map_level.cpp
+	"map_level.h"
+
+1526248864 source:/home/mrt/Code/Bloodlines/src/map_tile.cpp
+	"map_tile.h"
+
+1526248862 source:/home/mrt/Code/Bloodlines/src/map_zone.cpp
+	"map_zone.h"
+
+1526248863 source:/home/mrt/Code/Bloodlines/src/npc.cpp
+	"npc.h"
+
+1526248862 source:/home/mrt/Code/Bloodlines/src/party.cpp
+	"party.h"
+
+1526248862 source:/home/mrt/Code/Bloodlines/src/special.cpp
+	"special.h"
+
+1526248867 source:/home/mrt/Code/Bloodlines/src/states/action_cutscene.cpp
+	"states/action_cutscene.h"
+
+1526248929 /home/mrt/Code/Bloodlines/inc/states/action_cutscene.h
+	<iostream>
+	<sstream>
+	<SFML/Graphics.hpp>
+	<fstream>
+	"gamestate.h"
+	"states/combat.h"
+	"boxes.h"
+	"tool.h"
+
+1526248931 /home/mrt/Code/Bloodlines/inc/states/combat.h
+	<iostream>
+	<vector>
+	<deque>
+	<utility>
+	<SFML/Graphics.hpp>
+	"constants.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"monster.h"
+	"hero.h"
+	"special.h"
+	"enemy.h"
+	"states/combat_cutscene.h"
+	"status_message.h"
+	"combat_action.h"
+
+1526248927 /home/mrt/Code/Bloodlines/inc/monster.h
+	<SFML/Graphics.hpp>
+	<string>
+
+1526248932 /home/mrt/Code/Bloodlines/inc/states/combat_cutscene.h
+	"boxes.h"
+	"tool.h"
+	"gamestate.h"
+	"status_message.h"
+	"combat_action.h"
+	"hero.h"
+	"prop.h"
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+
+1526248933 /home/mrt/Code/Bloodlines/inc/prop.h
+	<SFML/Graphics.hpp>
+
+1526248867 source:/home/mrt/Code/Bloodlines/src/states/character_designer.cpp
+	"states/character_designer.h"
+
+1526248932 /home/mrt/Code/Bloodlines/inc/states/character_designer.h
+	<iostream>
+	<string>
+	<math.h>
+	<algorithm>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"states/play.h"
+	"tool.h"
+	"hero.h"
+
+1526248929 /home/mrt/Code/Bloodlines/inc/states/play.h
+	<sstream>
+	<iostream>
+	<numeric>
+	<algorithm>
+	<SFML/Graphics.hpp>
+	"constants.h"
+	"gamestate.h"
+	"map_level.h"
+	"gameengine.h"
+	"states/edit_map.h"
+	"states/edit_enemy.h"
+	"states/combat.h"
+	"states/minimenu.h"
+	"states/minimenu_edit.h"
+	"states/dialog.h"
+	"boxes.h"
+	"tool.h"
+	"trigger.h"
+
+1526248930 /home/mrt/Code/Bloodlines/inc/states/edit_map.h
+	<SFML/Graphics.hpp>
+	<bitset>
+	<map>
+	<iostream>
+	<fstream>
+	<sstream>
+	"map_tile.h"
+	"constants.h"
+	"map_zone.h"
+	"tool.h"
+	"boxes.h"
+	"gameengine.h"
+	"gamestate.h"
+	"states/edit_beacon.h"
+	"states/edit_objects.h"
+	"states/edit_triggers.h"
+	"states/input_string.h"
+
+1526248931 /home/mrt/Code/Bloodlines/inc/states/edit_beacon.h
+	<iostream>
+	<sstream>
+	<map>
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"beacon.h"
+
+1526248932 /home/mrt/Code/Bloodlines/inc/states/edit_objects.h
+	<iostream>
+	<sstream>
+	<SFML/Graphics.hpp>
+	"object.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+
+1526248932 /home/mrt/Code/Bloodlines/inc/states/edit_triggers.h
+	<iostream>
+	<sstream>
+	<algorithm>
+	<SFML/Graphics.hpp>
+	"object.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	<states/input_string.h>
+
+1526248929 /home/mrt/Code/Bloodlines/inc/states/input_string.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+
+1526248929 /home/mrt/Code/Bloodlines/inc/states/edit_enemy.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+
+1526248930 /home/mrt/Code/Bloodlines/inc/states/minimenu.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	"gamestate.h"
+	"boxes.h"
+	"gameengine.h"
+	"gamestate.h"
+	"states/tactics.h"
+	"states/menu_options.h"
+	"states/status_stats.h"
+	"states/status_inventory.h"
+	"states/status_quests.h"
+	"states/status_specials.h"
+
+1526248932 /home/mrt/Code/Bloodlines/inc/states/tactics.h
+	<iostream>
+	<sstream>
+	<string>
+	<algorithm>
+	<numeric>
+	<cmath>
+	<SFML/Graphics.hpp>
+	"constants.h"
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+
+1526248929 /home/mrt/Code/Bloodlines/inc/states/menu_options.h
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+
+1526248931 /home/mrt/Code/Bloodlines/inc/states/status_stats.h
+	<iostream>
+	<sstream>
+	<string>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+
+1526248931 /home/mrt/Code/Bloodlines/inc/states/status_inventory.h
+	<iostream>
+	<sstream>
+	<string>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"states/action_cutscene.h"
+
+1526248931 /home/mrt/Code/Bloodlines/inc/states/status_quests.h
+	<iostream>
+	<sstream>
+	<string>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"quest.h"
+	"boxes.h"
+	"tool.h"
+
+1526248929 /home/mrt/Code/Bloodlines/inc/states/status_specials.h
+	<iostream>
+	<sstream>
+	<string>
+	<SFML/Graphics.hpp>
+	"special.h"
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+
+1526248929 /home/mrt/Code/Bloodlines/inc/states/minimenu_edit.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"states/edit_map.h"
+	"states/edit_enemy.h"
+	"states/edit_item.h"
+	"states/edit_npc_waypoint.h"
+	"states/edit_anim.h"
+
+1526248931 /home/mrt/Code/Bloodlines/inc/states/edit_item.h
+	<iostream>
+	<fstream>
+	<sstream>
+	<algorithm>
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"item.h"
+
+1526248932 /home/mrt/Code/Bloodlines/inc/states/edit_npc_waypoint.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"constants.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"npc.h"
+
+1526248932 /home/mrt/Code/Bloodlines/inc/states/edit_anim.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	<set>
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"input_string.h"
+
+1526248930 /home/mrt/Code/Bloodlines/inc/states/dialog.h
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"npc.h"
+	"hero.h"
+	"states/combat.h"
+	"states/action_cutscene.h"
+	"states/store.h"
+	<iostream>
+	<map>
+	<fstream>
+	<string>
+	<vector>
+	<sstream>
+
+1526248932 /home/mrt/Code/Bloodlines/inc/states/store.h
+	<iostream>
+	<sstream>
+	<string>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"hero.h"
+
+1526248865 source:/home/mrt/Code/Bloodlines/src/states/combat.cpp
+	"states/combat.h"
+
+1526248867 source:/home/mrt/Code/Bloodlines/src/states/combat_cutscene.cpp
+	"states/combat_cutscene.h"
+
+1526248864 source:/home/mrt/Code/Bloodlines/src/states/dialog.cpp
+	"states/dialog.h"
+
+1526248864 source:/home/mrt/Code/Bloodlines/src/states/edit_anim.cpp
+	"states/edit_anim.h"
+
+1526248865 source:/home/mrt/Code/Bloodlines/src/states/edit_beacon.cpp
+	"states/edit_beacon.h"
+
+1526248864 source:/home/mrt/Code/Bloodlines/src/states/edit_enemy.cpp
+	"states/edit_enemy.h"
+
+1526248866 source:/home/mrt/Code/Bloodlines/src/states/edit_item.cpp
+	"states/edit_item.h"
+
+1526248865 source:/home/mrt/Code/Bloodlines/src/states/edit_map.cpp
+	"states/edit_map.h"
+
+1526248865 source:/home/mrt/Code/Bloodlines/src/states/edit_npc_waypoint.cpp
+	"states/edit_npc_waypoint.h"
+
+1526248865 source:/home/mrt/Code/Bloodlines/src/states/edit_objects.cpp
+	"states/edit_objects.h"
+
+1526248866 source:/home/mrt/Code/Bloodlines/src/states/edit_triggers.cpp
+	"states/edit_triggers.h"
+
+1526248864 source:/home/mrt/Code/Bloodlines/src/states/input_string.cpp
+	"states/input_string.h"
+
+1526248867 source:/home/mrt/Code/Bloodlines/src/states/intro.cpp
+	<SFML/Graphics.hpp>
+	<iostream>
+	"gameengine.h"
+	"gamestate.h"
+	"states/intro.h"
+	"states/start_menu.h"
+
+1526248929 /home/mrt/Code/Bloodlines/inc/states/start_menu.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"states/save_load.h"
+	"states/character_designer.h"
+
+1526248931 /home/mrt/Code/Bloodlines/inc/states/save_load.h
+	<iostream>
+	<algorithm>
+	<vector>
+	<string>
+	<ctime>
+	<sstream>
+	<fstream>
+	<SFML/Graphics.hpp>
+	"states/play.h"
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"special.h"
+	"party.h"
+	"hero.h"
+
+1526248866 source:/home/mrt/Code/Bloodlines/src/states/menu_options.cpp
+	<SFML/Graphics.hpp>
+	<iostream>
+	"gameengine.h"
+	"gamestate.h"
+	"states/menu_options.h"
+	"states/save_load.h"
+
+1526248866 source:/home/mrt/Code/Bloodlines/src/states/minimenu.cpp
+	"states/minimenu.h"
+
+1526248866 source:/home/mrt/Code/Bloodlines/src/states/minimenu_edit.cpp
+	"states/minimenu_edit.h"
+
+1526248867 source:/home/mrt/Code/Bloodlines/src/states/play.cpp
+	"states/play.h"
+
+1526248866 source:/home/mrt/Code/Bloodlines/src/states/save_load.cpp
+	"states/save_load.h"
+
+1526248868 source:/home/mrt/Code/Bloodlines/src/states/start_menu.cpp
+	"states/start_menu.h"
+
+1526248866 source:/home/mrt/Code/Bloodlines/src/states/status_inventory.cpp
+	"states/status_inventory.h"
+
+1526248867 source:/home/mrt/Code/Bloodlines/src/states/status_quests.cpp
+	"states/status_quests.h"
+
+1526248868 source:/home/mrt/Code/Bloodlines/src/states/status_specials.cpp
+	"states/status_specials.h"
+
+1526248865 source:/home/mrt/Code/Bloodlines/src/states/status_stats.cpp
+	"states/status_stats.h"
+
+1526248866 source:/home/mrt/Code/Bloodlines/src/states/store.cpp
+	"states/store.h"
+
+1526248865 source:/home/mrt/Code/Bloodlines/src/states/tactics.cpp
+	"states/tactics.h"
+
+1526248863 source:/home/mrt/Code/Bloodlines/src/status.cpp
+	"status.h"
+
+1526248863 source:/home/mrt/Code/Bloodlines/src/tool.cpp
+	"tool.h"
+
+1526248862 source:/home/mrt/Documents/Code/Bloodlines/src/box.cpp
+	"box.h"
+
+1526248928 /home/mrt/Documents/Code/Bloodlines/inc/box.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<string>
+	<iostream>
+
+1526248862 source:/home/mrt/Documents/Code/Bloodlines/src/boxes.cpp
+	"boxes.h"
+
+1526248927 /home/mrt/Documents/Code/Bloodlines/inc/boxes.h
+	<iostream>
+	<initializer_list>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	"box.h"
+	"tool.h"
+
+1526248926 /home/mrt/Documents/Code/Bloodlines/inc/tool.h
+	<SFML/Graphics.hpp>
+	<math.h>
+	<string>
+	<iostream>
+	<fstream>
+	<sstream>
+	<random>
+	<sys/types.h>
+	<dirent.h>
+	<errno.h>
+	"constants.h"
+
+1526248933 /home/mrt/Documents/Code/Bloodlines/inc/constants.h
+	<SFML/Graphics.hpp>
+	<cmath>
+
+1526248863 source:/home/mrt/Documents/Code/Bloodlines/src/gameengine.cpp
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+
+1526248932 /home/mrt/Documents/Code/Bloodlines/inc/gameengine.h
+	<SFML/Graphics.hpp>
+	<vector>
+	<map>
+	"party.h"
+	"map_level.h"
+	"item.h"
+	"boxes.h"
+	"status_message.h"
+	"combat_action.h"
+	"special.h"
+
+1526248933 /home/mrt/Documents/Code/Bloodlines/inc/party.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	<deque>
+	<string>
+	<sstream>
+	"hero.h"
+	"quest.h"
+	"constants.h"
+	"map_level.h"
+	"tool.h"
+
+1526248928 /home/mrt/Documents/Code/Bloodlines/inc/hero.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"constants.h"
+	"math.h"
+	"special.h"
+	"status.h"
+	"effect.h"
+	"item.h"
+
+1526248927 /home/mrt/Documents/Code/Bloodlines/inc/special.h
+	<SFML/Graphics.hpp>
+
+1526248927 /home/mrt/Documents/Code/Bloodlines/inc/status.h
+	<iostream>
+	<sstream>
+	"special.h"
+
+1526248929 /home/mrt/Documents/Code/Bloodlines/inc/effect.h
+
+1526248928 /home/mrt/Documents/Code/Bloodlines/inc/item.h
+	<string>
+
+1526248927 /home/mrt/Documents/Code/Bloodlines/inc/quest.h
+
+1526248928 /home/mrt/Documents/Code/Bloodlines/inc/map_level.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<string>
+	<iostream>
+	<fstream>
+	<vector>
+	<sstream>
+	<map>
+	"tool.h"
+	"beacon.h"
+	"constants.h"
+	"map_zone.h"
+	"npc.h"
+	"waypoint.h"
+	"enemy.h"
+	"trigger.h"
+
+1526248927 /home/mrt/Documents/Code/Bloodlines/inc/beacon.h
+
+1526248927 /home/mrt/Documents/Code/Bloodlines/inc/map_zone.h
+	<SFML/Graphics.hpp>
+	<vector>
+	<string>
+	<iostream>
+	<sstream>
+	<fstream>
+	<bitset>
+	<tool.h>
+	"map_tile.h"
+	"object.h"
+	"constants.h"
+	"map_tile_attributes.h"
+
+1526248933 /home/mrt/Documents/Code/Bloodlines/inc/map_tile.h
+	<SFML/Graphics.hpp>
+	<vector>
+	<iostream>
+	<bitset>
+	"constants.h"
+	"map_tile_attributes.h"
+
+1526248926 /home/mrt/Documents/Code/Bloodlines/inc/map_tile_attributes.h
+
+1526248928 /home/mrt/Documents/Code/Bloodlines/inc/object.h
+	<SFML/Graphics.hpp>
+
+1526248927 /home/mrt/Documents/Code/Bloodlines/inc/npc.h
+	<vector>
+	<string>
+	"constants.h"
+	"waypoint.h"
+	"tool.h"
+	<SFML/Graphics.hpp>
+
+1526248926 /home/mrt/Documents/Code/Bloodlines/inc/waypoint.h
+	"SFML/Graphics.hpp"
+	<string>
+
+1526248926 /home/mrt/Documents/Code/Bloodlines/inc/enemy.h
+	<string>
+	<vector>
+	<cmath>
+	<SFML/Graphics.hpp>
+	"status.h"
+
+1526248926 /home/mrt/Documents/Code/Bloodlines/inc/trigger.h
+
+1526248927 /home/mrt/Documents/Code/Bloodlines/inc/status_message.h
+
+1526248928 /home/mrt/Documents/Code/Bloodlines/inc/combat_action.h
+
+1526248932 /home/mrt/Documents/Code/Bloodlines/inc/gamestate.h
+	"gameengine.h"
+
+1526248863 source:/home/mrt/Documents/Code/Bloodlines/src/hero.cpp
+	"hero.h"
+
+1526248863 source:/home/mrt/Documents/Code/Bloodlines/src/item.cpp
+	"item.h"
+
+1526248863 source:/home/mrt/Documents/Code/Bloodlines/src/main.cpp
+	<iostream>
+	"constants.h"
+	"gameengine.h"
+	"states/intro.h"
+
+1526248931 /home/mrt/Documents/Code/Bloodlines/inc/states/intro.h
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+
+1526248862 source:/home/mrt/Documents/Code/Bloodlines/src/map_level.cpp
+	"map_level.h"
+
+1526248864 source:/home/mrt/Documents/Code/Bloodlines/src/map_tile.cpp
+	"map_tile.h"
+
+1526248862 source:/home/mrt/Documents/Code/Bloodlines/src/map_zone.cpp
+	"map_zone.h"
+
+1526248863 source:/home/mrt/Documents/Code/Bloodlines/src/npc.cpp
+	"npc.h"
+
+1526248862 source:/home/mrt/Documents/Code/Bloodlines/src/party.cpp
+	"party.h"
+
+1526248862 source:/home/mrt/Documents/Code/Bloodlines/src/special.cpp
+	"special.h"
+
+1526248867 source:/home/mrt/Documents/Code/Bloodlines/src/states/action_cutscene.cpp
+	"states/action_cutscene.h"
+
+1526248929 /home/mrt/Documents/Code/Bloodlines/inc/states/action_cutscene.h
+	<iostream>
+	<sstream>
+	<SFML/Graphics.hpp>
+	<fstream>
+	"gamestate.h"
+	"states/combat.h"
+	"boxes.h"
+	"tool.h"
+
+1526248931 /home/mrt/Documents/Code/Bloodlines/inc/states/combat.h
+	<iostream>
+	<vector>
+	<deque>
+	<utility>
+	<SFML/Graphics.hpp>
+	"constants.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"monster.h"
+	"hero.h"
+	"special.h"
+	"enemy.h"
+	"states/combat_cutscene.h"
+	"status_message.h"
+	"combat_action.h"
+
+1526248927 /home/mrt/Documents/Code/Bloodlines/inc/monster.h
+	<SFML/Graphics.hpp>
+	<string>
+
+1526248932 /home/mrt/Documents/Code/Bloodlines/inc/states/combat_cutscene.h
+	"boxes.h"
+	"tool.h"
+	"gamestate.h"
+	"status_message.h"
+	"combat_action.h"
+	"hero.h"
+	"prop.h"
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+
+1526248933 /home/mrt/Documents/Code/Bloodlines/inc/prop.h
+	<SFML/Graphics.hpp>
+
+1526248867 source:/home/mrt/Documents/Code/Bloodlines/src/states/character_designer.cpp
+	"states/character_designer.h"
+
+1526248932 /home/mrt/Documents/Code/Bloodlines/inc/states/character_designer.h
+	<iostream>
+	<string>
+	<math.h>
+	<algorithm>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"states/play.h"
+	"tool.h"
+	"hero.h"
+
+1526248929 /home/mrt/Documents/Code/Bloodlines/inc/states/play.h
+	<sstream>
+	<iostream>
+	<numeric>
+	<algorithm>
+	<SFML/Graphics.hpp>
+	"constants.h"
+	"gamestate.h"
+	"map_level.h"
+	"gameengine.h"
+	"states/edit_map.h"
+	"states/edit_enemy.h"
+	"states/combat.h"
+	"states/minimenu.h"
+	"states/minimenu_edit.h"
+	"states/dialog.h"
+	"boxes.h"
+	"tool.h"
+	"trigger.h"
+
+1526248930 /home/mrt/Documents/Code/Bloodlines/inc/states/edit_map.h
+	<SFML/Graphics.hpp>
+	<bitset>
+	<map>
+	<iostream>
+	<fstream>
+	<sstream>
+	"map_tile.h"
+	"constants.h"
+	"map_zone.h"
+	"tool.h"
+	"boxes.h"
+	"gameengine.h"
+	"gamestate.h"
+	"states/edit_beacon.h"
+	"states/edit_objects.h"
+	"states/edit_triggers.h"
+	"states/input_string.h"
+
+1526248931 /home/mrt/Documents/Code/Bloodlines/inc/states/edit_beacon.h
+	<iostream>
+	<sstream>
+	<map>
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"beacon.h"
+
+1526248932 /home/mrt/Documents/Code/Bloodlines/inc/states/edit_objects.h
+	<iostream>
+	<sstream>
+	<SFML/Graphics.hpp>
+	"object.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+
+1526248932 /home/mrt/Documents/Code/Bloodlines/inc/states/edit_triggers.h
+	<iostream>
+	<sstream>
+	<algorithm>
+	<SFML/Graphics.hpp>
+	"object.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	<states/input_string.h>
+
+1526248929 /home/mrt/Documents/Code/Bloodlines/inc/states/input_string.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+
+1526248929 /home/mrt/Documents/Code/Bloodlines/inc/states/edit_enemy.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+
+1526248930 /home/mrt/Documents/Code/Bloodlines/inc/states/minimenu.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	"gamestate.h"
+	"boxes.h"
+	"gameengine.h"
+	"gamestate.h"
+	"states/tactics.h"
+	"states/menu_options.h"
+	"states/status_stats.h"
+	"states/status_inventory.h"
+	"states/status_quests.h"
+	"states/status_specials.h"
+
+1526248932 /home/mrt/Documents/Code/Bloodlines/inc/states/tactics.h
+	<iostream>
+	<sstream>
+	<string>
+	<algorithm>
+	<numeric>
+	<cmath>
+	<SFML/Graphics.hpp>
+	"constants.h"
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+
+1526248929 /home/mrt/Documents/Code/Bloodlines/inc/states/menu_options.h
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+
+1526248931 /home/mrt/Documents/Code/Bloodlines/inc/states/status_stats.h
+	<iostream>
+	<sstream>
+	<string>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+
+1526248931 /home/mrt/Documents/Code/Bloodlines/inc/states/status_inventory.h
+	<iostream>
+	<sstream>
+	<string>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"states/action_cutscene.h"
+
+1526248931 /home/mrt/Documents/Code/Bloodlines/inc/states/status_quests.h
+	<iostream>
+	<sstream>
+	<string>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"quest.h"
+	"boxes.h"
+	"tool.h"
+
+1526248929 /home/mrt/Documents/Code/Bloodlines/inc/states/status_specials.h
+	<iostream>
+	<sstream>
+	<string>
+	<SFML/Graphics.hpp>
+	"special.h"
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+
+1526248929 /home/mrt/Documents/Code/Bloodlines/inc/states/minimenu_edit.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"states/edit_map.h"
+	"states/edit_enemy.h"
+	"states/edit_item.h"
+	"states/edit_npc_waypoint.h"
+	"states/edit_anim.h"
+
+1526248931 /home/mrt/Documents/Code/Bloodlines/inc/states/edit_item.h
+	<iostream>
+	<fstream>
+	<sstream>
+	<algorithm>
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"item.h"
+
+1526248932 /home/mrt/Documents/Code/Bloodlines/inc/states/edit_npc_waypoint.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"constants.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"npc.h"
+
+1526248932 /home/mrt/Documents/Code/Bloodlines/inc/states/edit_anim.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	<set>
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"input_string.h"
+
+1526248930 /home/mrt/Documents/Code/Bloodlines/inc/states/dialog.h
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"npc.h"
+	"hero.h"
+	"states/combat.h"
+	"states/action_cutscene.h"
+	"states/store.h"
+	<iostream>
+	<map>
+	<fstream>
+	<string>
+	<vector>
+	<sstream>
+
+1526248932 /home/mrt/Documents/Code/Bloodlines/inc/states/store.h
+	<iostream>
+	<sstream>
+	<string>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"hero.h"
+
+1526248865 source:/home/mrt/Documents/Code/Bloodlines/src/states/combat.cpp
+	"states/combat.h"
+
+1526248867 source:/home/mrt/Documents/Code/Bloodlines/src/states/combat_cutscene.cpp
+	"states/combat_cutscene.h"
+
+1526248864 source:/home/mrt/Documents/Code/Bloodlines/src/states/dialog.cpp
+	"states/dialog.h"
+
+1526248864 source:/home/mrt/Documents/Code/Bloodlines/src/states/edit_anim.cpp
+	"states/edit_anim.h"
+
+1526248865 source:/home/mrt/Documents/Code/Bloodlines/src/states/edit_beacon.cpp
+	"states/edit_beacon.h"
+
+1526248864 source:/home/mrt/Documents/Code/Bloodlines/src/states/edit_enemy.cpp
+	"states/edit_enemy.h"
+
+1526248866 source:/home/mrt/Documents/Code/Bloodlines/src/states/edit_item.cpp
+	"states/edit_item.h"
+
+1526248865 source:/home/mrt/Documents/Code/Bloodlines/src/states/edit_map.cpp
+	"states/edit_map.h"
+
+1526248865 source:/home/mrt/Documents/Code/Bloodlines/src/states/edit_npc_waypoint.cpp
+	"states/edit_npc_waypoint.h"
+
+1526248865 source:/home/mrt/Documents/Code/Bloodlines/src/states/edit_objects.cpp
+	"states/edit_objects.h"
+
+1526248866 source:/home/mrt/Documents/Code/Bloodlines/src/states/edit_triggers.cpp
+	"states/edit_triggers.h"
+
+1526248864 source:/home/mrt/Documents/Code/Bloodlines/src/states/input_string.cpp
+	"states/input_string.h"
+
+1526248867 source:/home/mrt/Documents/Code/Bloodlines/src/states/intro.cpp
+	<SFML/Graphics.hpp>
+	<iostream>
+	"gameengine.h"
+	"gamestate.h"
+	"states/intro.h"
+	"states/start_menu.h"
+
+1526248929 /home/mrt/Documents/Code/Bloodlines/inc/states/start_menu.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"states/save_load.h"
+	"states/character_designer.h"
+
+1526248931 /home/mrt/Documents/Code/Bloodlines/inc/states/save_load.h
+	<iostream>
+	<algorithm>
+	<vector>
+	<string>
+	<ctime>
+	<sstream>
+	<fstream>
+	<SFML/Graphics.hpp>
+	"states/play.h"
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"special.h"
+	"party.h"
+	"hero.h"
+
+1526248866 source:/home/mrt/Documents/Code/Bloodlines/src/states/menu_options.cpp
+	<SFML/Graphics.hpp>
+	<iostream>
+	"gameengine.h"
+	"gamestate.h"
+	"states/menu_options.h"
+	"states/save_load.h"
+
+1526248866 source:/home/mrt/Documents/Code/Bloodlines/src/states/minimenu.cpp
+	"states/minimenu.h"
+
+1526248866 source:/home/mrt/Documents/Code/Bloodlines/src/states/minimenu_edit.cpp
+	"states/minimenu_edit.h"
+
+1526248867 source:/home/mrt/Documents/Code/Bloodlines/src/states/play.cpp
+	"states/play.h"
+
+1526248866 source:/home/mrt/Documents/Code/Bloodlines/src/states/save_load.cpp
+	"states/save_load.h"
+
+1526248868 source:/home/mrt/Documents/Code/Bloodlines/src/states/start_menu.cpp
+	"states/start_menu.h"
+
+1526248866 source:/home/mrt/Documents/Code/Bloodlines/src/states/status_inventory.cpp
+	"states/status_inventory.h"
+
+1526248867 source:/home/mrt/Documents/Code/Bloodlines/src/states/status_quests.cpp
+	"states/status_quests.h"
+
+1526248868 source:/home/mrt/Documents/Code/Bloodlines/src/states/status_specials.cpp
+	"states/status_specials.h"
+
+1526248865 source:/home/mrt/Documents/Code/Bloodlines/src/states/status_stats.cpp
+	"states/status_stats.h"
+
+1526248866 source:/home/mrt/Documents/Code/Bloodlines/src/states/store.cpp
+	"states/store.h"
+
+1526248865 source:/home/mrt/Documents/Code/Bloodlines/src/states/tactics.cpp
+	"states/tactics.h"
+
+1526248863 source:/home/mrt/Documents/Code/Bloodlines/src/status.cpp
+	"status.h"
+
+1526248863 source:/home/mrt/Documents/Code/Bloodlines/src/tool.cpp
+	"tool.h"
+
+1526248862 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/box.cpp
+	"box.h"
+
+1526248928 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/box.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<string>
+	<iostream>
+
+1526248862 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/boxes.cpp
+	"boxes.h"
+
+1526248927 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/boxes.h
+	<iostream>
+	<initializer_list>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	"box.h"
+	"tool.h"
+
+1526248926 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/tool.h
+	<SFML/Graphics.hpp>
+	<math.h>
+	<string>
+	<iostream>
+	<fstream>
+	<sstream>
+	<random>
+	<sys/types.h>
+	<dirent.h>
+	<errno.h>
+	"constants.h"
+
+1526248933 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/constants.h
+	<SFML/Graphics.hpp>
+	<cmath>
+
+1526248863 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/gameengine.cpp
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+
+1526248932 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/gameengine.h
+	<SFML/Graphics.hpp>
+	<vector>
+	<map>
+	"party.h"
+	"map_level.h"
+	"item.h"
+	"boxes.h"
+	"status_message.h"
+	"combat_action.h"
+	"special.h"
+
+1526248933 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/party.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	<deque>
+	<string>
+	<sstream>
+	"hero.h"
+	"quest.h"
+	"constants.h"
+	"map_level.h"
+	"tool.h"
+
+1526248928 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/hero.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"constants.h"
+	"math.h"
+	"special.h"
+	"status.h"
+	"effect.h"
+	"item.h"
+
+1526248927 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/special.h
+	<SFML/Graphics.hpp>
+
+1526248927 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/status.h
+	<iostream>
+	<sstream>
+	"special.h"
+
+1526248929 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/effect.h
+
+1526248928 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/item.h
+	<string>
+
+1526248927 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/quest.h
+
+1526248928 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/map_level.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<string>
+	<iostream>
+	<fstream>
+	<vector>
+	<sstream>
+	<map>
+	"tool.h"
+	"beacon.h"
+	"constants.h"
+	"map_zone.h"
+	"npc.h"
+	"waypoint.h"
+	"enemy.h"
+	"trigger.h"
+
+1526248927 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/beacon.h
+
+1526248927 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/map_zone.h
+	<SFML/Graphics.hpp>
+	<vector>
+	<string>
+	<iostream>
+	<sstream>
+	<fstream>
+	<bitset>
+	<tool.h>
+	"map_tile.h"
+	"object.h"
+	"constants.h"
+	"map_tile_attributes.h"
+
+1526248933 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/map_tile.h
+	<SFML/Graphics.hpp>
+	<vector>
+	<iostream>
+	<bitset>
+	"constants.h"
+	"map_tile_attributes.h"
+
+1526248926 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/map_tile_attributes.h
+
+1526248928 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/object.h
+	<SFML/Graphics.hpp>
+
+1526248927 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/npc.h
+	<vector>
+	<string>
+	"constants.h"
+	"waypoint.h"
+	"tool.h"
+	<SFML/Graphics.hpp>
+
+1526248926 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/waypoint.h
+	"SFML/Graphics.hpp"
+	<string>
+
+1526248926 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/enemy.h
+	<string>
+	<vector>
+	<cmath>
+	<SFML/Graphics.hpp>
+	"status.h"
+
+1526248926 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/trigger.h
+
+1526248927 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/status_message.h
+
+1526248928 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/combat_action.h
+
+1526248932 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/gamestate.h
+	"gameengine.h"
+
+1526248863 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/hero.cpp
+	"hero.h"
+
+1526248863 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/item.cpp
+	"item.h"
+
+1526248863 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/main.cpp
+	<iostream>
+	"constants.h"
+	"gameengine.h"
+	"states/intro.h"
+
+1526248931 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/states/intro.h
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+
+1526248862 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/map_level.cpp
+	"map_level.h"
+
+1526248864 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/map_tile.cpp
+	"map_tile.h"
+
+1526248862 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/map_zone.cpp
+	"map_zone.h"
+
+1526248863 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/npc.cpp
+	"npc.h"
+
+1526248862 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/party.cpp
+	"party.h"
+
+1526248862 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/special.cpp
+	"special.h"
+
+1526248867 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/states/action_cutscene.cpp
+	"states/action_cutscene.h"
+
+1526248929 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/states/action_cutscene.h
+	<iostream>
+	<sstream>
+	<SFML/Graphics.hpp>
+	<fstream>
+	"gamestate.h"
+	"states/combat.h"
+	"boxes.h"
+	"tool.h"
+
+1526248931 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/states/combat.h
+	<iostream>
+	<vector>
+	<deque>
+	<utility>
+	<SFML/Graphics.hpp>
+	"constants.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"monster.h"
+	"hero.h"
+	"special.h"
+	"enemy.h"
+	"states/combat_cutscene.h"
+	"status_message.h"
+	"combat_action.h"
+
+1526248927 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/monster.h
+	<SFML/Graphics.hpp>
+	<string>
+
+1526248932 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/states/combat_cutscene.h
+	"boxes.h"
+	"tool.h"
+	"gamestate.h"
+	"status_message.h"
+	"combat_action.h"
+	"hero.h"
+	"prop.h"
+	<iostream>
+	<vector>
+	<SFML/Graphics.hpp>
+
+1526248933 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/prop.h
+	<SFML/Graphics.hpp>
+
+1526248867 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/states/character_designer.cpp
+	"states/character_designer.h"
+
+1526248932 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/states/character_designer.h
+	<iostream>
+	<string>
+	<math.h>
+	<algorithm>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"states/play.h"
+	"tool.h"
+	"hero.h"
+
+1526248929 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/states/play.h
+	<sstream>
+	<iostream>
+	<numeric>
+	<algorithm>
+	<SFML/Graphics.hpp>
+	"constants.h"
+	"gamestate.h"
+	"map_level.h"
+	"gameengine.h"
+	"states/edit_map.h"
+	"states/edit_enemy.h"
+	"states/combat.h"
+	"states/minimenu.h"
+	"states/minimenu_edit.h"
+	"states/dialog.h"
+	"boxes.h"
+	"tool.h"
+	"trigger.h"
+
+1526248930 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/states/edit_map.h
+	<SFML/Graphics.hpp>
+	<bitset>
+	<map>
+	<iostream>
+	<fstream>
+	<sstream>
+	"map_tile.h"
+	"constants.h"
+	"map_zone.h"
+	"tool.h"
+	"boxes.h"
+	"gameengine.h"
+	"gamestate.h"
+	"states/edit_beacon.h"
+	"states/edit_objects.h"
+	"states/edit_triggers.h"
+	"states/input_string.h"
+
+1526248931 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/states/edit_beacon.h
+	<iostream>
+	<sstream>
+	<map>
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"beacon.h"
+
+1526248932 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/states/edit_objects.h
+	<iostream>
+	<sstream>
+	<SFML/Graphics.hpp>
+	"object.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+
+1526248932 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/states/edit_triggers.h
+	<iostream>
+	<sstream>
+	<algorithm>
+	<SFML/Graphics.hpp>
+	"object.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	<states/input_string.h>
+
+1526248929 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/states/input_string.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+
+1526248929 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/states/edit_enemy.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+
+1526248930 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/states/minimenu.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	"gamestate.h"
+	"boxes.h"
+	"gameengine.h"
+	"gamestate.h"
+	"states/tactics.h"
+	"states/menu_options.h"
+	"states/status_stats.h"
+	"states/status_inventory.h"
+	"states/status_quests.h"
+	"states/status_specials.h"
+
+1526248932 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/states/tactics.h
+	<iostream>
+	<sstream>
+	<string>
+	<algorithm>
+	<numeric>
+	<cmath>
+	<SFML/Graphics.hpp>
+	"constants.h"
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+
+1526248929 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/states/menu_options.h
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+
+1526248931 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/states/status_stats.h
+	<iostream>
+	<sstream>
+	<string>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+
+1526248931 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/states/status_inventory.h
+	<iostream>
+	<sstream>
+	<string>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"states/action_cutscene.h"
+
+1526248931 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/states/status_quests.h
+	<iostream>
+	<sstream>
+	<string>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"quest.h"
+	"boxes.h"
+	"tool.h"
+
+1526248929 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/states/status_specials.h
+	<iostream>
+	<sstream>
+	<string>
+	<SFML/Graphics.hpp>
+	"special.h"
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+
+1526248929 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/states/minimenu_edit.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"states/edit_map.h"
+	"states/edit_enemy.h"
+	"states/edit_item.h"
+	"states/edit_npc_waypoint.h"
+	"states/edit_anim.h"
+
+1526248931 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/states/edit_item.h
+	<iostream>
+	<fstream>
+	<sstream>
+	<algorithm>
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"item.h"
+
+1526248932 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/states/edit_npc_waypoint.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"constants.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"npc.h"
+
+1526248932 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/states/edit_anim.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	<set>
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"input_string.h"
+
+1526248930 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/states/dialog.h
+	<SFML/Graphics.hpp>
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"npc.h"
+	"hero.h"
+	"states/combat.h"
+	"states/action_cutscene.h"
+	"states/store.h"
+	<iostream>
+	<map>
+	<fstream>
+	<string>
+	<vector>
+	<sstream>
+
+1526248932 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/states/store.h
+	<iostream>
+	<sstream>
+	<string>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"hero.h"
+
+1526248865 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/states/combat.cpp
+	"states/combat.h"
+
+1526248867 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/states/combat_cutscene.cpp
+	"states/combat_cutscene.h"
+
+1526248864 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/states/dialog.cpp
+	"states/dialog.h"
+
+1526248864 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/states/edit_anim.cpp
+	"states/edit_anim.h"
+
+1526248865 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/states/edit_beacon.cpp
+	"states/edit_beacon.h"
+
+1526248864 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/states/edit_enemy.cpp
+	"states/edit_enemy.h"
+
+1526248866 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/states/edit_item.cpp
+	"states/edit_item.h"
+
+1526248865 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/states/edit_map.cpp
+	"states/edit_map.h"
+
+1526248865 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/states/edit_npc_waypoint.cpp
+	"states/edit_npc_waypoint.h"
+
+1526248865 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/states/edit_objects.cpp
+	"states/edit_objects.h"
+
+1526248866 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/states/edit_triggers.cpp
+	"states/edit_triggers.h"
+
+1526248864 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/states/input_string.cpp
+	"states/input_string.h"
+
+1526248867 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/states/intro.cpp
+	<SFML/Graphics.hpp>
+	<iostream>
+	"gameengine.h"
+	"gamestate.h"
+	"states/intro.h"
+	"states/start_menu.h"
+
+1526248929 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/states/start_menu.h
+	<iostream>
+	<SFML/Graphics.hpp>
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"states/save_load.h"
+	"states/character_designer.h"
+
+1526248931 /home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/inc/states/save_load.h
+	<iostream>
+	<algorithm>
+	<vector>
+	<string>
+	<ctime>
+	<sstream>
+	<fstream>
+	<SFML/Graphics.hpp>
+	"states/play.h"
+	"gameengine.h"
+	"gamestate.h"
+	"boxes.h"
+	"tool.h"
+	"special.h"
+	"party.h"
+	"hero.h"
+
+1526248866 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/states/menu_options.cpp
+	<SFML/Graphics.hpp>
+	<iostream>
+	"gameengine.h"
+	"gamestate.h"
+	"states/menu_options.h"
+	"states/save_load.h"
+
+1526248866 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/states/minimenu.cpp
+	"states/minimenu.h"
+
+1526248866 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/states/minimenu_edit.cpp
+	"states/minimenu_edit.h"
+
+1526248867 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/states/play.cpp
+	"states/play.h"
+
+1526248866 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/states/save_load.cpp
+	"states/save_load.h"
+
+1526248868 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/states/start_menu.cpp
+	"states/start_menu.h"
+
+1526248866 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/states/status_inventory.cpp
+	"states/status_inventory.h"
+
+1526248867 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/states/status_quests.cpp
+	"states/status_quests.h"
+
+1526248868 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/states/status_specials.cpp
+	"states/status_specials.h"
+
+1526248865 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/states/status_stats.cpp
+	"states/status_stats.h"
+
+1526248866 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/states/store.cpp
+	"states/store.h"
+
+1526248865 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/states/tactics.cpp
+	"states/tactics.h"
+
+1526248863 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/status.cpp
+	"status.h"
+
+1526248863 source:/home/mrt/Documents/Code/Projects/Matt's Video Game - Bloodlines/src/tool.cpp
+	"tool.h"
+

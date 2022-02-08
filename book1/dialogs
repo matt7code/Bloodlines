@@ -1,0 +1,282 @@
+# Commands:
+# NPC <TAG>
+# PUT <npc-dialog>
+# SAY <pc-dialog>
+# QUEST_SET <key-to-set> <value-to-set-it-to>
+# QUEST_REMOVE <key-to-remove>
+# COND TRUE
+# COND FALSE
+# COND HAS_GREATER_THAN_ITEM_AMOUNT <item-to-check> <amount-checked>
+# COND HAS_LESS_THAN_ITEM_AMOUNT <item-to-check> <amount-checked>
+# COND QUEST_HAS <key-to-retrieve> <value-to-compare-it-to>
+# COND HAS_GREATER_THAN_GOLD_AMOUNT <amount>
+# COND HAS_LESS_THAN_GOLD_AMOUNT <amount>
+# COND_END
+# CHOICE START // Begin a Choice Block
+# CHOICE <choice-text>
+# CHOICE END // End a Choice Block
+# !<bookmark-name>
+# GOTO <bookmark>
+# GOTO <line>
+# GOTO START
+# GOTO END
+# RAND <potential-dialog>
+# END
+# PAUSE
+# LIST_QUEST
+# ITEM_GIVE <item-id> <amount>
+# ITEM_TAKE <item-id> <amount>
+# ITEM_TAKE_ALL <TRUE if equipped included>
+# GOLD_GIVE <amount>
+# GOLD_TAKE <amount>
+# ACTION SLEEP
+
+NPC Inventory_Cleaner
+PUT "Hi, I take all your inventory, and trash it!"
+ITEM_TAKE_ALL FALSE
+SAY "Umm, thanks... I guess."
+END
+
+NPC InnBed
+SAY A nice warm bed presents itself.
+CHOICE START
+    CHOICE Sleep [Heal and Save Game]
+        ACTION Sleep
+        SAY You feel refreshed.
+    CHOICE Forget it.
+CHOICE END
+END
+
+NPC WT_PATRON4
+PUT "I'm a tailor, have some clothes!"
+
+ITEM_GIVE 24 1
+ITEM_GIVE 25 1
+ITEM_GIVE 26 1
+ITEM_GIVE 27 1
+ITEM_GIVE 28 1
+ITEM_GIVE 29 1
+ITEM_GIVE 30 1
+ITEM_GIVE 31 1
+ITEM_GIVE 32 1
+ITEM_GIVE 33 1
+ITEM_GIVE 34 1
+ITEM_GIVE 35 1
+ITEM_GIVE 36 1
+ITEM_GIVE 37 1
+ITEM_GIVE 38 1
+ITEM_GIVE 39 1
+ITEM_GIVE 42 1
+ITEM_GIVE 45 1
+ITEM_GIVE 48 1
+ITEM_GIVE 51 1
+ITEM_GIVE 54 1
+ITEM_GIVE 57 1
+ITEM_GIVE 60 1
+ITEM_GIVE 63 1
+SAY "Wow, thanks!"
+PUT "No problem."
+END
+
+NPC WOODTOWN_BARKEEP
+PUT "What'll it be, pal?"
+COND HAS_GREATER_THAN_GOLD_AMOUNT 0
+CHOICE START
+    CHOICE Buy an ale (1g)
+        SAY "I'll have a warm ale."
+        PUT "That's a good thing, warm ale is all we have," he says laughing.
+        PUT The barkeep collects a gold coin and passes you a warm ale.
+        QUEST_SET Ale Drinker_yay!
+        GOLD_TAKE 1
+        ITEM_GIVE 19 1
+    CHOICE Never mind.
+        QUEST_SET Ale Wouldn't_buy
+        SAY "Nothing right now."
+CHOICE END
+COND_END
+COND HAS_LESS_THAN_GOLD_AMOUNT 1
+CHOICE START
+    CHOICE You realize you can't currently afford even a warm ale...
+        SAY "Nothing right now."
+CHOICE END
+COND_END
+END
+
+NPC WT_PATRON1
+PUT "I'm going to list your quest values."
+LIST_QUEST
+PUT "I'm going to add a value, 'Goblin_Lover' = 'I_love_Goblins.'"
+QUEST_SET Goblin_Lover I_love_Goblins.
+LIST_QUEST
+PUT "Now I will remove it."
+QUEST_REMOVE Goblin_Lover
+LIST_QUEST
+END
+
+NPC GIRL_IN_T_HALL
+PUT "Hi, I'm going to list your quest values!"
+LIST_QUEST
+END
+
+NPC WT_PATRON2
+PUT "Hello, I'm Woodtown Patron #2."
+COND HAS_LESS_THAN_ITEM_AMOUNT 1 1
+    PUT "You don't have any gold bars..."
+    SAY "No, I know. I wish I did."
+COND_END
+COND HAS_GREATER_THAN_ITEM_AMOUNT 1 0
+    PUT "You have at least one gold bar!"
+    SAY "Yes, that is true."
+    PUT "Can I have it?"
+
+    CHOICE START
+            CHOICE "No way!"
+                SAY "No way!"
+                PUT "Oh well, it was worth a shot."
+            CHOICE "Sure, what the hell!"
+                SAY "Sure, what the hell!"
+                ITEM_TAKE 1 500
+                PUT "Gimme 500! Muahahha, thanks!"
+    CHOICE END
+COND_END
+END
+
+NPC WOODTOWN-HARPER
+PUT "Let's Stress Test the Choice System..."
+PUT "Guess my favorite color!"
+SAY "All right..."
+    CHOICE START
+        CHOICE Red
+            SAY "Is it red?"
+            PUT "Oh, I love red, but..."
+            PUT "...try again."
+            GOTO CHOICESTART
+        CHOICE Blue
+            SAY "Is it blue?"
+            PUT "Nope, try again."
+            GOTO CHOICESTART
+        CHOICE Green
+            SAY "Is it green?"
+            PUT "Nope, try again."
+            GOTO CHOICESTART
+        CHOICE Black
+            SAY "Is it black?"
+            PUT "Nope, try again."
+            GOTO CHOICESTART
+        CHOICE Cyan
+            SAY "Is it cyan?"
+            PUT "Nope, try again."
+            GOTO CHOICESTART
+        CHOICE Magenta
+            SAY "Is it magenta?"
+            PUT "Nope, try again."
+            GOTO CHOICESTART
+        CHOICE Brown
+            SAY "Is it brown?"
+            PUT "Nope, try again."
+            GOTO CHOICESTART
+        CHOICE Give up
+            SAY "I give up."
+            PUT "Aww, and after only a few guesses."
+            PUT "The answer was azure!"
+            PUT "Thanks for trying though."
+    CHOICE END
+SAY "Yeah, anytime."
+SAY "Bye."
+PUT "Bye bye!"
+END
+
+NPC NOTFOUND
+RAND "Hello."
+RAND "Excuse me."
+RAND "Nice to meet you."
+RAND "Have a good day."
+RAND "Do I know you?"
+RAND "Hi."
+END
+
+NPC SHOP_GUARD
+PUT "Hello, how are you?"
+    CHOICE START
+    CHOICE [Polite]
+        SAY "I am doing very well, thank you."
+        PUT "What a pleasant person!"
+        SAY You smile endearingly.
+    CHOICE [Jerk]
+        SAY "None of your business."
+        PUT "Well, how very rude!"
+        PUT He sneers at you.
+    CHOICE [Crazy]
+        SAY "I'm the king of taco land!"
+        PUT *looks stunned*
+        SAY "Yes, the king of taco land has spoken."
+    CHOICE [Sexy]
+        SAY "I like to talk sexy," you say sexily.
+        PUT *looks stunned*
+    CHOICE [Suspicious]
+        SAY "Why do you ask?"
+        PUT He shrugs.
+    CHOICE [Paranoid]
+        SAY "Who sent you? How do you know me? Why are you following me?!"
+        PUT "Umm, uhhh, umm..." he turns to run.
+    CHOICE What was the question?
+        PUT "I just asked how you the day finds, you [Sir/Ma'am]?
+        GOTO CHOICESTART
+    CHOICE END
+PUT "Okay... buh-bye!"
+END
+
+NPC BASIC_STORE
+RAND "Welcome to my shop."
+RAND "Have a look around."
+RAND "Quality goods for reasonable prices."
+RAND "I'm sure I have something you need."
+#STORE General
+STORE Everything
+END
+
+NPC HORSE
+RAND The horse whinnies nervously.
+RAND The horse ignores you.
+RAND A fine specimen of a horse is here.
+RAND It's not apparent who owns this horse.
+PUT "I'm a magic horse. I command you to dance."
+ACTION Dance1
+PUT The Horse's powers of dance are undeniable.
+END
+
+NPC FATHER_WARMSTONE
+COND QUEST_HAS act_1_main_quest on_mission_to_crypt
+    PUT Father Warmstone hands you a cold iron key, with a simple skull as it's head. "Take this key, you'll need it for the crypt south of town."
+    SAY "Thank you, I will route the evil in the crypt."
+    QUEST_SET act_1_main_quest has_crypt_key
+    ITEM GIVE 70 1
+COND_END
+COND QUEST_HAS act_1_main_quest has_crypt_key
+    PUT Father Warmstone wishes you luck on your quest."
+    END
+COND_END
+
+COND QUEST_LACKS act_1_main_quest on_mission_to_crypt
+    PUT Father Warmstone looks worried, but greets you warmly.
+    PUT Father Warmstone hands you a cold iron key, with a simple skull as it's head. "Take this key, you'll need it for the crypt south of town."
+    QUEST_SET act_1_main_quest has_crypt_key
+    ITEM_GIVE 70 1
+COND_END
+END
+
+NPC GUARD
+PUT "What's your business, citizen?"
+SAY "Just enjoying the day."
+PUT "If you need assistance, we will help."
+SAY "I'm fine, bye bye!"
+PUT "See you... soon."
+END
+
+NPC NICE_LADY
+PUT A concerned look upon her face, this pleasant looking-woman fleetingly darts here eyes from your left cheek to right, stopping to engage your eyes.
+PUT "You don't look so well... do you feel okay?"
+PUT Seemingly familiar with the discomfort her straight-forward manner could cause, she adds, "I'm a nurse here in town, dear," without missing a beat.
+SAY "I'm fine, thank you."
+PUT "Okay then, take care."
+END

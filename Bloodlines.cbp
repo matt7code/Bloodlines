@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Bloodlines" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Bloodlines" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DDEBUG" />
+					<Add directory="inc" />
+				</Compiler>
+			</Target>
+			<Target title="Fullscreen">
+				<Option output="bin/Final/Bloodlines" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DFINAL" />
+					<Add directory="inc" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=gnu++17" />
+			<Add option="-std=c++0x" />
+			<Add directory="src" />
+			<Add directory="inc" />
+		</Compiler>
+		<Linker>
+			<Add library="sfml-audio" />
+			<Add library="sfml-graphics" />
+			<Add library="sfml-window" />
+			<Add library="sfml-system" />
+			<Add directory="src" />
+			<Add directory="inc" />
+		</Linker>
+		<Unit filename="Instructions/Adding a Spell.txt" />
+		<Unit filename="anims/anims.db" />
+		<Unit filename="anims/hop_left_then_right.ani" />
+		<Unit filename="anims/hop_right_then_left.ani" />
+		<Unit filename="anims/jump_forward_then_back.ani" />
+		<Unit filename="anims/shake.ani" />
+		<Unit filename="anims/up_down.ani" />
+		<Unit filename="book1/beacons" />
+		<Unit filename="book1/cutscenes/Act_1_Boss_Fight_Entry.scr" />
+		<Unit filename="book1/cutscenes/Blue_Dragon_Entry.scr" />
+		<Unit filename="book1/cutscenes/Dance1.scr" />
+		<Unit filename="book1/cutscenes/FadeIn.scr" />
+		<Unit filename="book1/cutscenes/FadeOut.scr" />
+		<Unit filename="book1/cutscenes/Game_Start_Entry.scr" />
+		<Unit filename="book1/cutscenes/No_Combat_Zone_Entry.scr" />
+		<Unit filename="book1/cutscenes/No_Combat_Zone_Exit.scr" />
+		<Unit filename="book1/cutscenes/None.scr" />
+		<Unit filename="book1/cutscenes/Send_Home_Step.scr" />
+		<Unit filename="book1/cutscenes/Sleep.scr" />
+		<Unit filename="book1/cutscenes/StairsDown.scr" />
+		<Unit filename="book1/cutscenes/StairsUp.scr" />
+		<Unit filename="book1/cutscenes/Test_Exit.scr" />
+		<Unit filename="book1/cutscenes/tent.scr" />
+		<Unit filename="book1/dialogs" />
+		<Unit filename="book1/enemies" />
+		<Unit filename="book1/npcs" />
+		<Unit filename="book1/triggers" />
+		<Unit filename="book1/waypoints" />
+		<Unit filename="book1/zones/p099p100p000.map" />
+		<Unit filename="book1/zones/p099p101p000.map" />
+		<Unit filename="book1/zones/p100p100p000.map" />
+		<Unit filename="book1/zones/p100p101p000.map" />
+		<Unit filename="font/DK Hey Comrade.otf" />
+		<Unit filename="font/EhmckeFederfraktur.ttf" />
+		<Unit filename="font/Inconsolata.otf" />
+		<Unit filename="font/Munich-Regular-Demo.ttf" />
+		<Unit filename="font/Write2.ttf" />
+		<Unit filename="font/swissbo.ttf" />
+		<Unit filename="graphics/avatar_sheet.png" />
+		<Unit filename="graphics/battle_scene_dungeon.png" />
+		<Unit filename="graphics/battle_scene_forest.png" />
+		<Unit filename="graphics/battle_scene_plain.png" />
+		<Unit filename="graphics/battle_scene_town.png" />
+		<Unit filename="graphics/battle_scene_underwater.png" />
+		<Unit filename="graphics/battle_scene_water.png" />
+		<Unit filename="graphics/book1_monsters.png" />
+		<Unit filename="graphics/characters.png" />
+		<Unit filename="graphics/cutscene/horseback_knight.png" />
+		<Unit filename="graphics/cutscene/minotaur.png" />
+		<Unit filename="graphics/cutscene/monster_kill.png" />
+		<Unit filename="graphics/cutscene/red_knight.png" />
+		<Unit filename="graphics/game.png" />
+		<Unit filename="graphics/game_menu.png" />
+		<Unit filename="graphics/intro.png" />
+		<Unit filename="graphics/map_edit_texture.png" />
+		<Unit filename="graphics/menu_textures.png" />
+		<Unit filename="graphics/spells.png" />
+		<Unit filename="graphics/start_menu.png" />
+		<Unit filename="graphics/terrain_basic.png" />
+		<Unit filename="inc/beacon.h" />
+		<Unit filename="inc/box.h" />
+		<Unit filename="inc/boxes.h" />
+		<Unit filename="inc/combat_action.h" />
+		<Unit filename="inc/constants.h" />
+		<Unit filename="inc/effect.h" />
+		<Unit filename="inc/enemy.h" />
+		<Unit filename="inc/gameengine.h" />
+		<Unit filename="inc/gamestate.h" />
+		<Unit filename="inc/hero.h" />
+		<Unit filename="inc/item.h" />
+		<Unit filename="inc/map_level.h" />
+		<Unit filename="inc/map_tile.h" />
+		<Unit filename="inc/map_tile_attributes.h" />
+		<Unit filename="inc/map_zone.h" />
+		<Unit filename="inc/npc.h" />
+		<Unit filename="inc/object.h" />
+		<Unit filename="inc/party.h" />
+		<Unit filename="inc/prop.h" />
+		<Unit filename="inc/quest.h" />
+		<Unit filename="inc/special.h" />
+		<Unit filename="inc/states/action_cutscene.h" />
+		<Unit filename="inc/states/character_designer.h" />
+		<Unit filename="inc/states/combat.h" />
+		<Unit filename="inc/states/combat_cutscene.h" />
+		<Unit filename="inc/states/dialog.h" />
+		<Unit filename="inc/states/edit_anim.h" />
+		<Unit filename="inc/states/edit_beacon.h" />
+		<Unit filename="inc/states/edit_enemy.h" />
+		<Unit filename="inc/states/edit_item.h" />
+		<Unit filename="inc/states/edit_map.h" />
+		<Unit filename="inc/states/edit_npc_waypoint.h" />
+		<Unit filename="inc/states/edit_objects.h" />
+		<Unit filename="inc/states/edit_triggers.h" />
+		<Unit filename="inc/states/input_string.h" />
+		<Unit filename="inc/states/intro.h" />
+		<Unit filename="inc/states/menu_options.h" />
+		<Unit filename="inc/states/minimenu.h" />
+		<Unit filename="inc/states/minimenu_edit.h" />
+		<Unit filename="inc/states/play.h" />
+		<Unit filename="inc/states/save_load.h" />
+		<Unit filename="inc/states/start_menu.h" />
+		<Unit filename="inc/states/status_inventory.h" />
+		<Unit filename="inc/states/status_quests.h" />
+		<Unit filename="inc/states/status_specials.h" />
+		<Unit filename="inc/states/status_stats.h" />
+		<Unit filename="inc/states/store.h" />
+		<Unit filename="inc/states/tactics.h" />
+		<Unit filename="inc/status.h" />
+		<Unit filename="inc/status_message.h" />
+		<Unit filename="inc/tool.h" />
+		<Unit filename="inc/trigger.h" />
+		<Unit filename="inc/waypoint.h" />
+		<Unit filename="items.db" />
+		<Unit filename="saves/savegame0.sav" />
+		<Unit filename="saves/savegame1.sav" />
+		<Unit filename="shaders/fragment_shader.frag" />
+		<Unit filename="shaders/vertex_shader.vert" />
+		<Unit filename="sounds/cancel-button.wav" />
+		<Unit filename="sounds/confirm-button.wav" />
+		<Unit filename="sounds/door.wav" />
+		<Unit filename="sounds/select-button.wav" />
+		<Unit filename="specials/Flee" />
+		<Unit filename="specials/Guard" />
+		<Unit filename="specials/None" />
+		<Unit filename="specials/Stance" />
+		<Unit filename="specials/UseGenericItem" />
+		<Unit filename="specials/UsePotion" />
+		<Unit filename="specials/UseScroll" />
+		<Unit filename="specials/UseWand" />
+		<Unit filename="specials/attack_melee_basic_monster" />
+		<Unit filename="specials/attack_melee_basic_player" />
+		<Unit filename="specials/high_chop" />
+		<Unit filename="specials/specials.db" />
+		<Unit filename="specials/spell_burn" />
+		<Unit filename="specials/spell_lightning_bolt" />
+		<Unit filename="specials/spell_none" />
+		<Unit filename="src/box.cpp" />
+		<Unit filename="src/boxes.cpp" />
+		<Unit filename="src/gameengine.cpp" />
+		<Unit filename="src/hero.cpp" />
+		<Unit filename="src/item.cpp" />
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/map_level.cpp" />
+		<Unit filename="src/map_tile.cpp" />
+		<Unit filename="src/map_zone.cpp" />
+		<Unit filename="src/npc.cpp" />
+		<Unit filename="src/party.cpp" />
+		<Unit filename="src/special.cpp" />
+		<Unit filename="src/states/action_cutscene.cpp" />
+		<Unit filename="src/states/character_designer.cpp" />
+		<Unit filename="src/states/combat.cpp" />
+		<Unit filename="src/states/combat_cutscene.cpp" />
+		<Unit filename="src/states/dialog.cpp" />
+		<Unit filename="src/states/edit_anim.cpp" />
+		<Unit filename="src/states/edit_beacon.cpp" />
+		<Unit filename="src/states/edit_enemy.cpp" />
+		<Unit filename="src/states/edit_item.cpp" />
+		<Unit filename="src/states/edit_map.cpp" />
+		<Unit filename="src/states/edit_npc_waypoint.cpp" />
+		<Unit filename="src/states/edit_objects.cpp" />
+		<Unit filename="src/states/edit_triggers.cpp" />
+		<Unit filename="src/states/input_string.cpp" />
+		<Unit filename="src/states/intro.cpp" />
+		<Unit filename="src/states/menu_options.cpp" />
+		<Unit filename="src/states/minimenu.cpp" />
+		<Unit filename="src/states/minimenu_edit.cpp" />
+		<Unit filename="src/states/play.cpp" />
+		<Unit filename="src/states/save_load.cpp" />
+		<Unit filename="src/states/start_menu.cpp" />
+		<Unit filename="src/states/status_inventory.cpp" />
+		<Unit filename="src/states/status_quests.cpp" />
+		<Unit filename="src/states/status_specials.cpp" />
+		<Unit filename="src/states/status_stats.cpp" />
+		<Unit filename="src/states/store.cpp" />
+		<Unit filename="src/states/tactics.cpp" />
+		<Unit filename="src/status.cpp" />
+		<Unit filename="src/tool.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

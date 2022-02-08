@@ -1,0 +1,21 @@
+START
+
+        # What the actor will be doing.
+        SELECT ACTOR
+        ANIMATE SET_NAME fly_up_bomb_and_land
+        ANIMATE SET_STYLE END
+
+
+        # What the prop representing the burn will be doing
+        PROP 22 LOAD 8
+        SELECT 22
+        SPRITE MOVE +100 +100
+        ANIMATE SET_NAME shoot_from_bomb
+        ANIMATE SET_STYLE END
+
+        ANIMATE START ALL
+        #WAIT 1.5
+        #PROP 22 UNLOAD
+        WAIT ANIM
+
+END

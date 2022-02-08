@@ -1,0 +1,84 @@
+[HEADER]
+# Date and Time of Save
+Mon  5:25:15
+# Time Running (ms) - Total Steps - Gold
+21962996 7802 364518
+[PARTY]
+# Current Location Name:
+The Countryside
+# Location:
+101529 63873.9 0
+# Party Size:
+4
+# [END]
+# [Party Member]
+0
+# Name
+Matt
+# Experience
+976
+# Level Class Facing Avatar
+2 1 3 16
+# Current Health and Magic
+24 6
+# Spells
+100 
+# Inventory
+24 103 25 103 26 103 27 103 28 103 29 103 30 103 31 103 32 103 33 103 34 103 35 103 36 103 37 103 38 103 39 103 42 103 45 74 
+# Equipped
+36 68 37 60 60 0 0 38 0 39 
+# [END]
+# [Party Member]
+1
+# Name
+Kitty
+# Experience
+68
+# Level Class Facing Avatar
+2 1 3 31
+# Current Health and Magic
+24 6
+# Spells
+100 
+# Inventory
+0 0
+# Equipped
+0 0 0 0 0 0 0 0 0 0 
+# [END]
+# [Party Member]
+2
+# Name
+Elsa
+# Experience
+68
+# Level Class Facing Avatar
+2 1 3 3
+# Current Health and Magic
+24 6
+# Spells
+100 
+# Inventory
+0 0
+# Equipped
+0 0 0 0 0 0 0 0 0 0 
+# [END]
+# [Party Member]
+3
+# Name
+I love you!
+# Experience
+100
+# Level Class Facing Avatar
+2 1 3 18
+# Current Health and Magic
+24 6
+# Spells
+100 
+# Inventory
+67 1 2 1 
+# Equipped
+0 0 0 0 0 0 0 0 0 0 
+# [END]
+[CHESTS]
+102227 
+[END]

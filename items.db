@@ -1,0 +1,243 @@
+
+# Item ID, stackable, quest, equipslot, type, subtype, cost, value1, value2, value3, value4
+# Name
+# Desc
+
+# Slots, Types & Subtypes:
+
+# Slot_None = 0, Slot_Head = 1, Slot_Neck = 2, Slot_Armor = 3, Slot_Hand_R = 4, Slot_Hand_L = 5,
+# Slot_Ring_R = 6, Slot_Ring_L = 7, Slot_Gloves = 8, Slot_Belt = 9, Slot_Boots = 10
+# ItemType_None = 0, ItemType_Wand = 1, ItemType_Potion = 2, ItemType_Armor = 3,
+# ItemType_Weapon = 4, ItemType_Scroll = 5, ItemType_Junk = 6, ItemType_Key = 7,
+# ItemType_Tool = 8, ItemType_Valuable = 9};
+# ItemSubType_None = 0,
+# ItemSubType_Wand = 100,   ItemSubType_Wand_Lightning, ItemSubType_Wand_Missiles,
+# ItemSubType_Wand_Fireball, ItemSubType_Wand_Cold, ItemSubType_Wand_End
+# ItemSubType_Potion = 200, ItemSubType_Potion_Healing, ItemSubType_Potion_Poison,
+# ItemSubType_Potion_Mana, ItemSubType_Potion_End,
+# ItemSubType_Armor = 300,  ItemSubType_Armor_Head, ItemSubType_Armor_Body, ItemSubType_Armor_Neck,
+# ItemSubType_Armor_Shield, ItemSubType_Armor_Ring, ItemSubType_Armor_Gloves, ItemSubType_Armor_Belt,
+# ItemSubType_Armor_Boots,ItemSubType_Armor_End,
+# ItemSubType_Weapon = 400, ItemSubType_Weapon_Sword, ItemSubType_Weapon_Dagger, ItemSubType_Weapon_Bow,
+# ItemSubType_Weapon_Hammer, ItemSubType_Weapon_2H_Sword, ItemSubType_Weapon_Staff,ItemSubType_Weapon_End,
+# ItemSubType_Scroll = 500, ItemSubType_Scroll_Healing, ItemSubType_Scroll_Teleport,
+# ItemSubType_Scroll_Exit, ItemSubType_Scroll_Light, ItemSubType_Scroll_RemoveCurse,ItemSubType_Scroll_End,
+# ItemSubType_Junk = 600,   ItemSubType_Junk_Large, ItemSubType_Junk_Medium, ItemSubType_Junk_Small,
+# ItemSubType_Junk_End,ItemSubType_Key = 700,    ItemSubType_Key_Magic, ItemSubType_Key_Normal,ItemSubType_Key_End,
+# ItemSubType_Tool = 800,   ItemSubType_Tool_Tent, ItemSubType_Tool_Shovel,ItemSubType_Tool_End,
+# ItemSubType_Valuable = 900,  ItemSubType_Valuable_Gold, ItemSubType_Valuable_Gem,
+# ItemSubType_Valuable_Jewelry,ItemSubType_Valuable_End
+
+0	0	0	0	0	0	0	0	0	0	0
+Nothing
+It's nothing, really.
+1	0	0	0	9	901	200	0	17	0	0
+Gold Bar
+This heavy bar of shiny metal weighs as much as 200 gold coins.
+2	0	0	0	8	801	250	0	0	0	0
+Tent
+A tent large enough for several people. A single night's rest should fully refresh the party. In addition to the tent are various other camping supplies, such as flint and tinder, and a basic first aid kit.
+3	0	0	0	6	603	1	0	0	0	0
+a slice of bread
+No longer warm, but yet not given to mildew. This morsel should defy the onset of starvation for another day.
+4	0	0	4	4	404	50	0	0	0	0
+Wooden Club
+A large wood club. Looks heavy.
+5	0	0	4	4	405	0	0	0	0	0
+Shoddy Wood Sword
+A simple wooden sword.
+6	0	0	1	3	304	50	0	0	0	0
+Wooden Shield
+A small wooden shield. It's better then getting hit in the elbow, but not much better...
+7	0	0	4	1	0	0	0	0	0	0
+Wand of Lightning
+Zap!
+8	0	0	4	1	103	0	0	0	0	0
+Wand of Fireballs
+Woosh!
+9	0	0	4	1	104	0	0	0	0	0
+Wand of Frost
+Brrrrr!
+10	0	0	4	1	102	0	0	0	0	0
+Wand of Missiles
+Shazaam!
+11	0	0	25	4	401	0	0	0	0	0
+Two-Handed Sword
+A large gleaming steel sword. It will take two hands to wield it.
+12	12	0	4	4	406	1000	0	0	0	0
+Staff of Rain
+A beautifully carved oak staff with a sofly gowing blue crystal at the tip.
+13	0	0	0	9	902	500	0	0	0	0
+Diamond
+Priceless!
+14	0	0	0	6	603	0	0	0	0	0
+Acorn
+It's an acorn. Trees grow from these. Amazing but true.
+15	0	0	3	3	303	10	4	0	0	0
+Robe
+This is a robe.
+16	0	0	5	4	405	0	0	0	0	0
+Massive Flaming Battle Axe
+Glowing with magical fire, this Battle Axe has been blessed by the Gods. It's worth is beyond estimation.
+17	1	0	4	1	100	1000	0	0	0	0
+Wand of Healing
+This wand glows warmly.
+18	1	0	0	6	603	60	1	0	0	0
+Pipe
+A simple pipe useful for smoking tobacco, or various sorts of weeds found in the world.
+19	0	0	0	0	0	0	0	0	0	0
+Mug of Ale
+Ahh, a mug of warm ale.
+20	0	0	5	3	305	1	4	0	0	0
+A Band of Glowing Azure Light
+A circle of blue light, with amorphous, indistinct edges. It's the size of a ring and can be looped over a finger. It's clearly magical in nature.
+21	0	0	6	3	305	56	0	0	0	0
+A Blue Coral Ring
+There's a faint inlay of... perhaps ivory, or sea shell, running 'round the loop of deep blue stone.
+22	0	0	6	3	305	10	0	0	0	0
+A Red Ring
+A Red Ring
+23	0	0	6	3	305	10	0	0	0	0
+A Green Ring
+A Green Ring
+24	0	0	1	3	301	3	2	0	0	0
+Cloth Hat
+There's not much to say. This is a simple cloth head covering. It's fashionable, and keeps your head warm.
+25	0	0	3	3	302	7	2	0	0	0
+Cloth Armor
+A cloth outfit. It's appropriate, modest and clean.
+26	0	0	8	3	306	4	2	0	0	0
+Cloth Gloves
+Cloth Gloves
+27	0	0	10	3	308	4	2	0	0	0
+Cloth Boots
+Cloth Boots
+28	0	0	1	3	301	30	6	0	0	0
+Leather Helmet
+This leather cap fits snuggly and will provide some small protection againt head injury.
+29	0	0	3	3	302	70	15	0	0	0
+Leather Armor
+A very well made set of leather armor, including pants, breastplate, shirt, etc.
+30	0	0	8	3	306	40	6	0	0	0
+Leather Gloves
+Leather Gloves
+31	0	0	10	3	308	40	6	0	0	0
+Leather Boots
+Leather Boots
+32	0	0	1	3	301	90	10	0	0	0
+Chainmail Helmet
+Chainmail Helmet
+33	0	0	3	3	302	210	30	0	0	0
+Chainmail Armor
+Chainmail Armor
+34	0	0	8	3	306	120	10	0	0	0
+Chainmail Gloves
+Chainmail Gloves
+35	0	0	10	3	308	120	10	0	0	0
+Chainmail Boots
+Chainmail Boots
+36	0	0	1	3	301	150	10	0	0	0
+Platemail Helmet
+Platemail Helmet
+37	0	0	3	3	302	350	50	0	0	0
+Platemail Armor
+A suit of interlocking metal plates.
+38	0	0	8	3	306	200	20	0	0	0
+Platemail Gloves
+Platemail Gloves
+39	0	0	10	3	308	200	20	0	0	0
+Platemail Boots
+Platemail Boots
+40	0	0	4	4	401	100	60	0	0	0
+A Poorly-made Shortsword
+A Poorly-made Shortsword
+41	0	0	4	4	401	200	70	0	0	0
+A Well-made Shortsword
+A Well-made Shortsword
+42	0	0	4	4	401	500	80	0	0	0
+A Masterfully crafted Shortsword
+A Masterfully crafted Shortsword
+43	0	0	4	4	401	100	70	0	0	0
+A Poorly-made Longsword
+A Poorly-made Longsword
+44	0	0	4	4	401	200	80	0	0	0
+A Well-made Longsword
+A Well-made Longsword
+45	0	0	4	4	401	500	90	0	0	0
+A Masterfully crafted Longsword
+A Masterfully crafted Longsword
+46	0	0	4	4	402	20	30	0	0	0
+A Poorly-made Dagger
+A Poorly-made Dagger
+47	0	0	4	4	402	50	40	0	0	0
+A Well-made Dagger
+A Well-made Dagger
+48	0	0	4	4	402	100	50	0	0	0
+A Masterfully crafted Dagger
+A Masterfully crafted Dagger
+49	0	0	4	4	404	20	30	0	0	0
+A Poorly-made Axe
+A Poorly-made Axe
+50	0	0	4	4	404	50	40	0	0	0
+A Well-made Axe
+A Well-made Axe
+51	0	0	4	4	404	100	50	0	0	0
+A Masterfully crafted Axe
+A Masterfully crafted Axe
+52	0	0	4	4	403	20	30	0	0	0
+A Poorly-made Bow
+A Poorly-made Bow
+53	0	0	4	4	403	50	40	0	0	0
+A Well-made Bow
+A Well-made Bow
+54	0	0	4	4	403	100	50	0	0	0
+A Masterfully crafted Bow
+A Masterfully crafted Bow
+55	0	0	4	4	404	20	30	0	0	0
+A Poorly-made Warhammer
+A Poorly-made Warhammer
+56	0	0	4	4	404	50	40	0	0	0
+A Well-made Warhammer
+A Well-made Warhammer
+57	0	0	4	4	404	100	50	0	0	0
+A Masterfully crafted Warhammer
+A Masterfully crafted Warhammer
+58	0	0	4	4	405	120	45	0	0	0
+A Poorly-made Two-handed Sword
+A Poorly-made Two-handed Sword
+59	0	0	4	4	405	250	75	0	0	0
+A Well-made Two-handed Sword
+A Well-made Two-handed Sword
+60	0	0	4	4	405	600	100	0	0	0
+A Masterfully crafted Two-handed Sword
+A Masterfully crafted Two-handed Sword
+61	0	0	4	4	406	120	22	0	0	0
+A Poorly-made Staff
+A Poorly-made Staff
+62	0	0	4	4	406	250	35	0	0	0
+A Well-made Staff
+A Well-made Staff
+63	0	0	4	4	406	600	50	0	0	0
+A Masterfully crafted Staff
+A Masterfully crafted Staff
+64	0	0	0	0	0	0	0	0	0	0
+Apple
+A good looking Apple.
+65	0	0	3	6	603	2	0	0	0	0
+Water
+Good old water.
+66	0	0	0	6	603	1	0	0	0	0
+A Lego
+It hurts when you step on it!
+67	0	0	0	6	603	5	0	0	0	0
+Toy Ball
+Toss.
+68	0	0	2	3	603	10	0	0	0	0
+Heart Necklace
+A cute little Heart Necklace.
+69	0	0	2	3	302	200	0	0	0	0
+Necklace of Fire
+It burns when you touch it.
+70	1	1	0	7	700	8	1	1	0	0
+Skull-shaped Key
+This key is old, as evidenced by the smoothness worn into it's iron handle. As you turn it over in your hand, you get a sence of age, and cold. It's head has been fashioned to resemble an ornate skull, with the neck of the key extending from it's mouth.

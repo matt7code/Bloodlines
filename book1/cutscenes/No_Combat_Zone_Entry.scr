@@ -1,0 +1,4 @@
+# Turn off random combat
+START
+SAFE TRUE
+END

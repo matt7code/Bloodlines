@@ -1,0 +1,52 @@
+# The Very Start of the Game!
+START
+DRAW_LEVEL FALSE
+#QUEST_LACKS Seen_Intro True
+#QUEST_SET Seen_Intro True
+ST   A long time ago in a galaxy far, far away....
+ST
+ST  It is a period of civil war. Rebel spaceships,
+ST striking from a hidden base, have won their first
+ST     victory against the evil Galactic Empire.
+ST
+ST  During the battle, Rebel spies managed to steal
+ST secret plans to the Empire's ultimate weapon, the
+ST DEATH STAR, an armored space station with enough
+ST        power to destroy an entire planet.
+ST
+ST     Pursued by the Empire's sinister agents,
+ST   Princess Leia races home aboard her starship,
+ST  custodian of the stolen plans that can save her
+ST    people and restore freedom to the galaxy....
+ST
+ST
+
+IMAGE CLEAR
+FADE 10 1 0
+IMAGE graphics/cutscene/horseback_knight.png
+PAUSE 20
+FADE 10 0 1
+PAUSE 10
+
+IMAGE CLEAR
+FADE 10 1 0
+IMAGE graphics/cutscene/minotaur.png
+PAUSE 20
+FADE 10 0 1
+PAUSE 10
+
+IMAGE CLEAR
+FADE 10 1 0
+IMAGE graphics/cutscene/red_knight.png
+PAUSE 20
+FADE 10 0 1
+PAUSE 10
+
+IMAGE CLEAR
+DRAW_LEVEL TRUE
+FADE 5 0 1
+FADE OFF
+
+NOTICE The nightmare ends One.
+NOTICE The nightmare ends Two.
+END
